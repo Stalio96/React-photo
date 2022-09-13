@@ -8,7 +8,7 @@ const Header = () => {
         <header className="header">
             <Link className="header__title" to='/'>ILIYANA'S PHOTOS</Link>
 
-            <ul className="header__items">
+            <nav className="header__items">
                 <li className="header__item">
                     <Link className="item__link" to='/'>WORK</Link>
                 </li>
@@ -27,7 +27,7 @@ const Header = () => {
                 <li className="header__item">
                     <Link className="item__link" to='/socials'>SOCIALS</Link>
                 </li>
-            </ul>
+            </nav>
         </header>
     );
 }

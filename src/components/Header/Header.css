@@ -23,3 +23,9 @@
 .header__title {
     text-decoration: none;
 }
+
+.header__title {
+    font-size: 22px;
+
+    color: #2d2d2d;
+}
