@@ -1,5 +1,9 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 
+html {
+    scroll-behavior: smooth;
+}
+
 .footer__socials {
     display: flex;
 
@@ -40,4 +44,18 @@
 
 .footer__copyright {
     color: #9d9d9d;
+}
+
+.fa-sharp {
+    font-size: 30px;
+}
+
+.go-to-top__link {
+    transition: all 200ms ease-out;
+}
+
+.go-to-top__link {
+
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }

@@ -1,0 +1,14 @@
+.socials__container {
+    color: #f6f6f6;
+
+    height: 5000px;
+    width: 300px;
+
+    display: block;
+
+    margin: 20px auto;
+}
+
+.socials__insta__container__text {
+    color: black;
+}
