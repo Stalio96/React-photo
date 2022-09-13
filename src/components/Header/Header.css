@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+
+    gap: 100px;
+
+    height: 130px;
+}
+
+.header__items {
+    display: flex;
+
+    gap: 50px;
+}
+
+.header__item {
+    list-style: none;
+}
+
+.item__link,
+.header__title {
+    text-decoration: none;
+}
