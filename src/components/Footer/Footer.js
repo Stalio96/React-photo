@@ -37,7 +37,7 @@ const Footer = () => {
 
             <p className="footer__copyright">Copyright © 2022 ILIYANA'S PHOTOS. All Rights Reserved.</p>
 
-            <a className="go-to-top__link" href='#'><i class="fa-sharp fa-solid fa-arrow-up"></i></a>
+            <a className="go-to-top__link" href='#'><i className="fa-sharp fa-solid fa-arrow-up"></i></a>
 
         </footer>
     );
