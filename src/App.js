@@ -4,6 +4,7 @@ import './App.css';
 
 import About from './components/About/About';
 import Admin from './components/Admin/Admin';
+import Logout from './components/Logout/Logout';
 import Contact from './components/Contact/Contact';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
@@ -13,26 +14,31 @@ import Socials from './components/Socials/Socials';
 import Work from './components/Work/Work';
 import Footer from './components/Footer/Footer';
 
+import { AuthProvider } from './contexts/AuthContext';
+
 function App() {
   return (
-    <div className="App">
-      <Header />
+    <AuthProvider>
+      <div className="App">
+        <Header />
 
-      <main>
-        <Routes>
-          <Route path='/' element={<Work />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/home' element={<Home />} />
-          <Route path='/impressum' element={<Impressum />} />
-          <Route path='/product' element={<Product />} />
-          <Route path='/socials' element={<Socials />} />
-          <Route path='/admin' element={<Admin />} />
-        </Routes>
-      </main>
+        <main>
+          <Routes>
+            <Route path='/' element={<Work />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/home' element={<Home />} />
+            <Route path='/impressum' element={<Impressum />} />
+            <Route path='/product' element={<Product />} />
+            <Route path='/socials' element={<Socials />} />
+            <Route path='/admin' element={<Admin />} />
+            <Route path='/logout' element={<Logout />} />
+          </Routes>
+        </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </AuthProvider>
   );
 }
 

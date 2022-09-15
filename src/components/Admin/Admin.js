@@ -1,7 +1,14 @@
 import { useState } from "react";
-import { login } from "../../services/authService";
+import { useNavigate } from "react-router-dom";
+
+import * as authService from "../../services/authService";
+
+import { useAuthContext } from "../../contexts/AuthContext";
 
 const Admin = () => {
+    const { login } = useAuthContext();
+    const navigate = useNavigate();
+    const [error, setError] = useState('')
 
     const onLogin = (e) => {
         e.preventDefault();
@@ -11,14 +18,23 @@ const Admin = () => {
         const username = formData.get('username');
         const password = formData.get('password');
 
-        login(username, password)
+        authService.login(username, password)
             .then(authData => {
-                console.log(authData);
+                login(authData);
+                navigate('/create')
+            }).catch((err) => {
+                setError(err);
             });
     }
 
     return (
         <form onSubmit={onLogin} method="POST">
+
+            {
+                error.length != 0
+                    ? <span className="error">{error}</span>
+                    : null
+            }
             <div className="username">
                 <label className="user__label" htmlFor="username">Username</label>
                 <span className="input">
