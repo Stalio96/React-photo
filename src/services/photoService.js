@@ -13,3 +13,12 @@ export async function create(image, caption) {
 
     return result;
 }
+
+
+export async function getWork() {
+    const response = await fetch(`${baseUrl}/data/catalog/work`);
+
+    const result =  await response.json();
+
+    return result;
+}
