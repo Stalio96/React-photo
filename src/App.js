@@ -6,6 +6,7 @@ import About from './components/About/About';
 import Admin from './components/Admin/Admin';
 import Logout from './components/Logout/Logout';
 import Contact from './components/Contact/Contact';
+import Create from './components/Create/Create';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Impressum from './components/Impressum/Impressum';
@@ -27,6 +28,7 @@ function App() {
             <Route path='/' element={<Work />} />
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path='/create' element={<Create />} />
             <Route path='/home' element={<Home />} />
             <Route path='/impressum' element={<Impressum />} />
             <Route path='/product' element={<Product />} />

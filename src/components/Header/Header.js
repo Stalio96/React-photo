@@ -17,7 +17,6 @@ const Header = () => {
         </>
     );
 
-    // console.log(user)
     return (
         <header className="header">
             <Link className="header__title" to='/'>ILIYANA'S PHOTOS</Link>
@@ -42,7 +41,7 @@ const Header = () => {
                     <Link className="item__link" to='/socials'>SOCIALS</Link>
                 </li>
 
-                {user
+                {user.username
                     ? admin
                     : null
                 }
