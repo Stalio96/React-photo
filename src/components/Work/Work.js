@@ -21,7 +21,7 @@ const Work = () => {
 
     return (
         <>
-            {work.map(x => <WorkImage key={x._id} imageUrl={x} />)}
+            {work.map(x => <WorkImage key={x._id} photo={x} />)}
         </>
     )
 }
