@@ -39,15 +39,16 @@ const RealEstateImage = ({
     }
 
     return (
-        <li className={listClass}>
-            <img className={imageClass} src={photo.imageUrl} />
+        <>
+            <li className={listClass}>
+                <a href="#"><img className={imageClass} src={photo.imageUrl} /></a>
+            </li>
             {
                 user.username
                     ? <i onClick={deleteHandler} className="fa-regular fa-trash-can"></i>
                     : null
             }
-
-        </li>
+        </>
     )
 }
 

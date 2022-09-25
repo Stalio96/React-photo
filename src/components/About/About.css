@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
+.about {
+    margin: 100px 0;
+}
+
+.about__section {
+    display: flex;
+
+    gap: 80px;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 100px 0;
+}
+
+.about__heading {
+    font-size: 30px;
+    font-weight: 700;
+
+    letter-spacing: .25rem;
+
+    text-align: left;
+
+    color: #2d2d2d;
+}
+
+.about__text {
+    width: 600px;
+
+    text-align: left;
+
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    letter-spacing: .019em;
+    line-height: 2.33;
+
+    color: #3a3a3a;
+}
+
+.about__instagram {
+    color: white;
+
+    font-size: 20px;
+
+    letter-spacing: 7px;
+
+    text-decoration: none;
+
+    background-color: #2d2d2d;
+
+    padding: 14px 30px;
+
+    margin-bottom: 50px;
+
+    transition: all 300ms ease-in-out;
+}
+
+.about__instagram:hover {
+    background-color: #424242;
+}

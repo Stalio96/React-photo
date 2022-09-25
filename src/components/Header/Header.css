@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
 .header {
     display: flex;
 
@@ -7,6 +9,8 @@
     gap: 100px;
 
     height: 130px;
+
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header__items {
@@ -17,6 +21,8 @@
 
 .header__item {
     list-style: none;
+
+    font-weight: 500;
 }
 
 .item__link,
@@ -26,6 +32,10 @@
 
 .header__title {
     font-size: 22px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.25rem;
 
     color: #2d2d2d;
 }
