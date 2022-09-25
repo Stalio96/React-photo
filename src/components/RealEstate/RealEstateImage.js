@@ -11,17 +11,21 @@ const RealEstateImage = ({
 }) => {
     const { user } = useAuthContext();
     const [imageClass, setImageClass] = useState('');
+    const [listClass, setListClass] = useState('');
 
     useEffect(() => {
         const img = new Image();
         img.src = photo.imageUrl;
         img.onload = () => {
             if (img.height > img.width) {
-                setImageClass('tall');
+                setImageClass('tallImg');
+                setListClass('tallList');
             } else if (img.height < img.width) {
-                setImageClass('thick');
+                setImageClass('wideImg');
+                setListClass('wideList');
             } else if (img.height == img.width) {
-                setImageClass('equal');
+                setImageClass('equalImg');
+                setListClass('equalList');
             }
         };
     })
@@ -35,7 +39,7 @@ const RealEstateImage = ({
     }
 
     return (
-        <li className="realEstate__item">
+        <li className={listClass}>
             <img className={imageClass} src={photo.imageUrl} />
             {
                 user.username

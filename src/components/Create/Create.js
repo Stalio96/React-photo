@@ -1,10 +1,10 @@
-import * as photoService from '../../services/photoService';
-
 import axios from 'axios'
 
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Create = () => {
+    const navigate = useNavigate();
     const [file, setFile] = useState();
     const [caption, setCaption] = useState('');
 
@@ -21,18 +21,24 @@ const Create = () => {
             formData.append('caption', caption);
 
             await axios.post("http://localhost:3030/api/catalog/createRealEstate", formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+
+            navigate('/');
         } else if (caption == 'Portrait') {
             const formData = new FormData();
             formData.append('image', file);
             formData.append('caption', caption);
 
             await axios.post("http://localhost:3030/api/catalog/createPortrait", formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+
+            navigate('/portrait');
         } else if (caption == 'Product') {
             const formData = new FormData();
             formData.append('image', file);
             formData.append('caption', caption);
 
             await axios.post("http://localhost:3030/api/catalog/createProduct", formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+
+            navigate('/product');
         }
     }
 

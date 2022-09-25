@@ -24,7 +24,7 @@ export async function getRealEstates() {
 }
 
 export async function deleteRealEstate(photoId) {
-    const response = await fetch(`${baseUrl}/api/catalog/delete/${photoId}`, {
+    const response = await fetch(`${baseUrl}/api/catalog/deleteRealEstate/${photoId}`, {
         method: 'DELETE',
         headers: {
             'X-Authorization': getToken()
