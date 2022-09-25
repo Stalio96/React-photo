@@ -38,9 +38,6 @@ const Header = () => {
                     <Link className="item__link" to='/contact'>CONTACT</Link>
                 </li>
                 <li className="header__item">
-                    <Link className="item__link" to='/impressum'>IMPRESSUM</Link>
-                </li>
-                <li className="header__item">
                     <Link className="item__link" to='/socials'>SOCIALS</Link>
                 </li>
 

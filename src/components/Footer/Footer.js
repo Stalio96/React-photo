@@ -30,9 +30,6 @@ const Footer = () => {
                         <Link className="item__link" to='/contact'>CONTACT</Link>
                     </li>
                     <li className="footer__item">
-                        <Link className="item__link" to='/impressum'>IMPRESSUM</Link>
-                    </li>
-                    <li className="footer__item">
                         <Link className="item__link" to='/socials'>SOCIALS</Link>
                     </li>
                 </nav>

@@ -28,7 +28,10 @@ const RealEstateImage = ({
                 setListClass('equalList');
             }
         };
-    })
+    });
+
+    // const 
+
     const deleteHandler = (e) => {
         // e.preventDefault();    
 
