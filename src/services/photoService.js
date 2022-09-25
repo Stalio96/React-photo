@@ -1,30 +1,30 @@
 const baseUrl = 'http://localhost:3030';
 
-export async function create(image, caption) {
-    const response = await fetch(`${baseUrl}/data/catalog/create`, {
-        method: 'POST',
-        headers: {
-            // 'Content-Type': 'multipart/form-data'
-        },
-        body: JSON.stringify({image, caption})
-    });
+// export async function createRealEstate(image, caption) {
+//     const response = await fetch(`${baseUrl}/api/catalog/createRealEstate`, {
+//         method: 'POST',
+//         headers: {
+//             // 'Content-Type': 'multipart/form-data'
+//         },
+//         body: JSON.stringify({image, caption})
+//     });
 
-    const result = await response.json();
+//     const result = await response.json();
 
-    return result;
-}
+//     return result;
+// }
 
 
-export async function getWork() {
-    const response = await fetch(`${baseUrl}/data/catalog/work`);
+export async function getRealEstates() {
+    const response = await fetch(`${baseUrl}/api/catalog/realestate`);
 
     const result =  await response.json();
 
     return result;
 }
 
-export async function deleteWork(photoId) {
-    const response = await fetch(`${baseUrl}/data/catalog/delete/${photoId}`, {
+export async function deleteRealEstate(photoId) {
+    const response = await fetch(`${baseUrl}/api/catalog/delete/${photoId}`, {
         method: 'DELETE',
         headers: {
             'X-Authorization': getToken()
@@ -32,6 +32,39 @@ export async function deleteWork(photoId) {
     });
 }
 
+export async function getPortrait() {
+    const response = await fetch(`${baseUrl}/api/catalog/portrait`);
+
+    const result =  await response.json();
+
+    return result;
+}
+
+export async function deletePortrait(photoId) {
+    const response = await fetch(`${baseUrl}/api/catalog/deletePortrait/${photoId}`, {
+        method: 'DELETE',
+        headers: {
+            'X-Authorization': getToken()
+        }
+    });
+}
+
+export async function getProduct() {
+    const response = await fetch(`${baseUrl}/api/catalog/product`);
+
+    const result =  await response.json();
+
+    return result;
+}
+
+export async function deleteProduct(photoId) {
+    const response = await fetch(`${baseUrl}/api/catalog/deleteProduct/${photoId}`, {
+        method: 'DELETE',
+        headers: {
+            'X-Authorization': getToken()
+        }
+    });
+}
 
 function getToken() {
     try {

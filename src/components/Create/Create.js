@@ -11,31 +11,41 @@ const Create = () => {
     const onCreate = async (e) => {
         e.preventDefault();
 
-        const formData = new FormData();
-        formData.append('image', file);
-        formData.append('caption', caption);
-        await axios.post("http://localhost:3030/data/catalog/create", formData, { headers: {'Content-Type': 'multipart/form-data'}})
+        const data = new FormData(e.currentTarget);
 
-        // const image = formData.get('image');
-        // const caption = formData.get('caption');
+        const caption = data.get('caption');
 
-        // console.log(image, caption)
-        // photoService.create({image, caption})
-        //     .then(data => {
-        //         console.log(data);
-        //     });
+        if (caption == 'Real Estate') {
+            const formData = new FormData();
+            formData.append('image', file);
+            formData.append('caption', caption);
+
+            await axios.post("http://localhost:3030/api/catalog/createRealEstate", formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+        } else if (caption == 'Portrait') {
+            const formData = new FormData();
+            formData.append('image', file);
+            formData.append('caption', caption);
+
+            await axios.post("http://localhost:3030/api/catalog/createPortrait", formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+        } else if (caption == 'Product') {
+            const formData = new FormData();
+            formData.append('image', file);
+            formData.append('caption', caption);
+
+            await axios.post("http://localhost:3030/api/catalog/createProduct", formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+        }
     }
 
     return (
         <form onSubmit={onCreate} method="POST" encType='multipart/form-data'>
             <input onChange={e => setFile(e.target.files[0])} type="file" accept="image/*"></input>
-            <input value={caption} onChange={e => setCaption(e.target.value)} type="text" placeholder="caption"></input>
+            <select name='caption' value={caption} onChange={e => setCaption(e.target.value)} type="text" placeholder="caption">
+                <option value="Real Estate">Real Estate</option>
+                <option value="Portrait">Portrait</option>
+                <option value="Product">Product</option>
+            </select>
 
             <input type="submit" />
-            {/* <input name='image' type="file" accept="image/*" />
-            <input name='caption' type="text" placeholder="caption" />
-
-            <input type="submit" /> */}
         </form>
     );
 }

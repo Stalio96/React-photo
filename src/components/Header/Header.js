@@ -23,7 +23,10 @@ const Header = () => {
 
             <nav className="header__items">
                 <li className="header__item">
-                    <Link className="item__link" to='/'>WORK</Link>
+                    <Link className="item__link" to='/'>REAL ESTATE</Link>
+                </li>
+                <li className="header__item">
+                    <Link className="item__link" to='/portrait'>PORTRAIT</Link>
                 </li>
                 <li className="header__item">
                     <Link className="item__link" to='/product'>PRODUCT</Link>

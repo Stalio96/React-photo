@@ -12,7 +12,8 @@ import Home from './components/Home/Home';
 import Impressum from './components/Impressum/Impressum';
 import Product from './components/Product/Product';
 import Socials from './components/Socials/Socials';
-import Work from './components/Work/Work';
+import RealEstate from './components/RealEstate/RealEstate';
+import Portrait from './components/Portrait/Portrait';
 import Footer from './components/Footer/Footer';
 
 import { AuthProvider } from './contexts/AuthContext';
@@ -25,7 +26,8 @@ function App() {
 
         <main>
           <Routes>
-            <Route path='/' element={<Work />} />
+            <Route path='/' element={<RealEstate />} />
+            <Route path='/portrait' element={<Portrait />} />
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/create' element={<Create />} />

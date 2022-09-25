@@ -2,6 +2,7 @@ import { Link, useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import * as photoService from '../../services/photoService';
+import { useAuthContext } from "../../contexts/AuthContext";
 
 import './RealEstateImage.css';
 
@@ -36,7 +37,12 @@ const RealEstateImage = ({
     return (
         <li className="realEstate__item">
             <img className={imageClass} src={photo.imageUrl} />
-            <i onClick={deleteHandler} className="fa-regular fa-trash-can"></i>
+            {
+                user.username
+                    ? <i onClick={deleteHandler} className="fa-regular fa-trash-can"></i>
+                    : null
+            }
+
         </li>
     )
 }

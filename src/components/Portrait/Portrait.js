@@ -2,28 +2,28 @@ import { useEffect, useState } from "react";
 
 import * as photoService from '../../services/photoService';
 
-import ProductImage from "./ProductImage";
+import PortraitImage from "./PortraitImage";
 
-const Product = () => {
-    const [product, setProduct] = useState([]);
+const Portrait = () => {
+    const [portrait, setPortrait] = useState([]);
 
     useEffect(() => {
-        photoService.getProduct()
+        photoService.getPortrait()
             .then(result => {
-                setProduct(result);
+                setPortrait(result);
                 console.log(result);
             }).catch(err => {
                 console.log(err);
             })
     }, []);
 
-    console.log('work', product);
+    console.log('work', portrait);
 
     return (
         <>
-            {product.map(x => <ProductImage key={x._id} photo={x} />)}
+            {portrait.map(x => <PortraitImage key={x._id} photo={x} />)}
         </>
     )
 }
 
-export default Product;
+export default Portrait;

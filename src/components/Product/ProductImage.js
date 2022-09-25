@@ -2,16 +2,17 @@ import { Link, useParams, useNavigate } from "react-router-dom";
 
 import * as photoService from '../../services/photoService';
 
-import './WorkImage.css';
+// import './RealEstateImage.css';
 
-const WorkImage = ({
+const ProductImage = ({
     photo
 }) => {
 
     const deleteHandler = (e) => {
         // e.preventDefault();
 
-        photoService.deleteWork(photo._id)
+        
+        photoService.deleteProduct(photo._id)
             .then(() => {
                 console.log('deleted');
             })
@@ -25,4 +26,4 @@ const WorkImage = ({
     )
 }
 
-export default WorkImage;
+export default ProductImage;
