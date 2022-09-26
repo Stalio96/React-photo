@@ -20,9 +20,9 @@ const Product = () => {
     console.log('work', product);
 
     return (
-        <>
+        <div className="product__list">
             {product.map(x => <ProductImage key={x._id} photo={x} />)}
-        </>
+        </div>
     )
 }
 

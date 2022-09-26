@@ -11,8 +11,6 @@ const PortraitImage = ({
     const [tempImg, setTempImg] = useState('');
 
     const deleteHandler = (e) => {
-        // e.preventDefault();
-
         photoService.deletePortrait(photo._id)
             .then(() => {
                 console.log('deleted');
