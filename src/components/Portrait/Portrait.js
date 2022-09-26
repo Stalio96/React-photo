@@ -1,3 +1,6 @@
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 import { useEffect, useState } from "react";
 
 import * as photoService from '../../services/photoService';
@@ -10,6 +13,7 @@ const Portrait = () => {
     const [portrait, setPortrait] = useState([]);
 
     useEffect(() => {
+        Aos.init();
         photoService.getPortrait()
             .then(result => {
                 setPortrait(result);
@@ -23,7 +27,7 @@ const Portrait = () => {
 
     return (
         <div className="portrait__list">
-            {portrait.map(x => <PortraitImage key={x._id} photo={x} />)}
+            {portrait.map(x => <PortraitImage aos={'slide-left'} aos_offset={'100'} key={x._id} photo={x} />)}
         </div>
     )
 }

@@ -78,10 +78,10 @@
     margin: 0 auto;
 }
 
-.model.open .fa-xmark {
+.model.open .fa-xmark,
+.model.open .fa-arrow-right,
+.model.open .fa-arrow-left {
     position: fixed;
-    top: 10px;
-    right: 10px;
     width: 4rem;
     height: 4rem;
     font-size: 25px;
@@ -89,6 +89,21 @@
     background-color: rgba(0, 0, 0, 0.4);
     color: #ffffff;
     cursor: pointer;
+}
+
+.model.open .fa-arrow-right {
+    top: 440px;
+    right: 10px;
+}
+
+.model.open .fa-arrow-left {
+    top: 440px;
+    left: 10px;
+}
+
+.model.open .fa-xmark {
+    top: 10px;
+    right: 10px;
 }
 
 .fa-trash-can {

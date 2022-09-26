@@ -1,3 +1,6 @@
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 import { useState, useEffect } from "react";
 
 import * as photoService from '../../services/photoService';
@@ -8,6 +11,7 @@ const RealEstate = () => {
     const [realEstate, setRealEstate] = useState([]);
 
     useEffect(() => {
+        Aos.init();
         photoService.getRealEstates()
             .then(result => {
                 setRealEstate(result);
@@ -17,11 +21,9 @@ const RealEstate = () => {
             })
     }, []);
 
-    console.log('work', realEstate);
-
     return (
         <div className="realEstate__list">
-            {realEstate.map(x => <RealEstateImage key={x._id} photo={x} />)}
+            {realEstate.map(x => <RealEstateImage aos={'fade-up'} aos_offset={'100'} key={x._id} photo={x} />)}
         </div>
     )
 }

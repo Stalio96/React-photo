@@ -4,7 +4,9 @@ import * as photoService from '../../services/photoService';
 import { useAuthContext } from "../../contexts/AuthContext";
 
 const PortraitImage = ({
-    photo
+    photo,
+    aos,
+    aos_offset
 }) => {
     const { user } = useAuthContext();
     const [model, setModel] = useState(false);
@@ -28,7 +30,7 @@ const PortraitImage = ({
                 <img src={tempImg} />
                 <i className="fa-solid fa-xmark" onClick={() => setModel(false)}></i>
             </div>
-            <div className="portraitEl" onClick={() => getImg(photo.imageUrl)}>
+            <div data-aos={aos} data-aos-offset={aos_offset} className="portraitEl" onClick={() => getImg(photo.imageUrl)}>
                 <img className="img" src={photo.imageUrl} style={{ width: '100%' }} />
             </div>
             {

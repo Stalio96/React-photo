@@ -6,7 +6,9 @@ import { useAuthContext } from '../../contexts/AuthContext';
 import './Product.css';
 
 const ProductImage = ({
-    photo
+    photo,
+    aos,
+    aos_offset
 }) => {
     const { user } = useAuthContext();
     const [model, setModel] = useState(false);
@@ -30,7 +32,7 @@ const ProductImage = ({
                 <img src={tempImg} />
                 <i className="fa-solid fa-xmark" onClick={() => setModel(false)}></i>
             </div>
-            <div className="productEl" onClick={() => getImg(photo.imageUrl)}>
+            <div data-aos={aos} data-aos-offset={aos_offset} className="productEl" onClick={() => getImg(photo.imageUrl)}>
                 <img className="img" src={photo.imageUrl} style={{ width: '100%' }} />
             </div>
             {

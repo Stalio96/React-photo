@@ -6,11 +6,14 @@ import { useAuthContext } from "../../contexts/AuthContext";
 import './RealEstateImage.css';
 
 const RealEstateImage = ({
-    photo
+    photo,
+    aos,
+    aos_offset
 }) => {
     const { user } = useAuthContext();
     const [model, setModel] = useState(false);
     const [tempImg, setTempImg] = useState('');
+    // const [way, setWay] = useState();
 
     const deleteHandler = (e) => {
         // e.preventDefault();    
@@ -19,6 +22,15 @@ const RealEstateImage = ({
             .then(() => {
                 console.log('deleted');
             })
+    }
+
+    const getDirection = (direction) => {
+        // if(direction == 'right'){
+
+        // }else if(direction == 'left'){
+
+        // }
+        console.log(photo)
     }
 
     const getImg = (imageUrl) => {
@@ -31,8 +43,10 @@ const RealEstateImage = ({
             <div className={model ? 'model open' : 'model'}>
                 <img src={tempImg} />
                 <i className="fa-solid fa-xmark" onClick={() => setModel(false)}></i>
+                <i class="fa-solid fa-arrow-right" onClick={() => getDirection('right')}></i>
+                <i class="fa-solid fa-arrow-left" onClick={() => getDirection('left')}></i>
             </div>
-            <div className="realEstateEl" onClick={() => getImg(photo.imageUrl)}>
+            <div data-aos={aos} data-aos-offset={aos_offset} className="realEstateEl" onClick={() => getImg(photo.imageUrl)}>
                 <img className="realEstateImage" src={photo.imageUrl} style={{ width: '100%' }} />
             </div>
             {
