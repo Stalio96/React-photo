@@ -1,14 +1,60 @@
 .socials__container {
-    color: #f6f6f6;
+    background-color: #f6f6f6;
 
-    height: 5000px;
-    width: 300px;
+    height: 800px;
+    width: 800px;
 
     display: block;
 
-    margin: 20px auto;
+    margin: 50px auto;
+
+    display: flex;
+
+    gap: 50px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.socials__text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+
+    letter-spacing: 2px;
+}
+
+.socials__insta__container {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.socials__insta__container__instagram {
+    text-decoration: none;
+    font-family: 'Lora',serif;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+}
+
+.socials__insta__container__text,
+.socials__insta__container__instagram,
+.socials__insta__container i {
+    margin: 20px 0;
 }
 
 .socials__insta__container__text {
-    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+    
+    color: #3a3a3a;
+}
+
+.socials__img {
+    width: 400px;
+    height: auto;
 }
