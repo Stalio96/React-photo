@@ -1,0 +1,41 @@
+.portrait__list {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-width: 25%;
+    -moz-column-width: 25%;
+    column-width: 25;
+    padding: 0 12px;
+
+    margin-bottom: 50px;
+}
+
+.portrait__list .portraitEl {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.portrait__list .portraitEl:hover {
+    filter: opacity(.7);
+}
+
+@media (max-width: 991px) {
+    .portrait__list {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (max-width: 480px) {
+    .portrait__list {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        --webkit-column-width: 50%;
+        -moz-column-width: 50%;
+        column-width: 50%;
+    }
+}

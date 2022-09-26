@@ -13,7 +13,6 @@ const PortraitImage = ({
     const deleteHandler = (e) => {
         // e.preventDefault();
 
-
         photoService.deletePortrait(photo._id)
             .then(() => {
                 console.log('deleted');
@@ -31,7 +30,7 @@ const PortraitImage = ({
                 <img src={tempImg} />
                 <i className="fa-solid fa-xmark" onClick={() => setModel(false)}></i>
             </div>
-            <div className="portraitEl">
+            <div className="portraitEl" onClick={() => getImg(photo.imageUrl)}>
                 <img className="img" src={photo.imageUrl} style={{ width: '100%' }} />
             </div>
             {
