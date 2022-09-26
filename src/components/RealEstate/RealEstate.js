@@ -20,9 +20,9 @@ const RealEstate = () => {
     console.log('work', realEstate);
 
     return (
-        <ul className="realEstate__list">
+        <div className="realEstate__list">
             {realEstate.map(x => <RealEstateImage key={x._id} photo={x} />)}
-        </ul>
+        </div>
     )
 }
 
