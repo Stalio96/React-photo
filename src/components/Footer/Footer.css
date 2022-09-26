@@ -52,18 +52,25 @@ html {
     margin-bottom: 50px;
 }
 
-.fa-sharp {
-    font-size: 30px;
-
-    margin-bottom: 50px;
-}
-
 .go-to-top__link {
     transition: all 200ms ease-out;
 }
 
 .go-to-top__link {
-
     overflow-y: scroll;
     scroll-behavior: smooth;
+}
+
+.fa-arrow-up-long {
+    color: #2d2d2d;
+
+    font-size: 30px;
+
+    margin-bottom: 50px;
+
+    transition: all 200ms ease-out;
+}
+
+.fa-arrow-up-long:hover {
+    color: #9a9a9a;
 }
