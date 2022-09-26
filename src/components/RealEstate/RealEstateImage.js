@@ -1,5 +1,4 @@
-import { Link, useParams, useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import * as photoService from '../../services/photoService';
 import { useAuthContext } from "../../contexts/AuthContext";
@@ -12,25 +11,6 @@ const RealEstateImage = ({
     const { user } = useAuthContext();
     const [model, setModel] = useState(false);
     const [tempImg, setTempImg] = useState('');
-
-    // useEffect(() => {
-    //     const img = new Image();
-    //     img.src = photo.imageUrl;
-    //     img.onload = () => {
-    //         if (img.height > img.width) {
-    //             setImageClass('tallImg');
-    //             setListClass('tallList');
-    //         } else if (img.height < img.width) {
-    //             setImageClass('wideImg');
-    //             setListClass('wideList');
-    //         } else if (img.height == img.width) {
-    //             setImageClass('equalImg');
-    //             setListClass('equalList');
-    //         }
-    //     };
-    // });
-
-    // const 
 
     const deleteHandler = (e) => {
         // e.preventDefault();    
