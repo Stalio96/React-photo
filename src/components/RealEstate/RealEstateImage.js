@@ -40,11 +40,11 @@ const RealEstateImage = ({
 
     return (
         <>
-            <div className={model ? 'model open' : 'model'}>
-                <img src={tempImg} />
-                <i className="fa-solid fa-xmark" onClick={() => setModel(false)}></i>
-                <i class="fa-solid fa-arrow-right" onClick={() => getDirection('right')}></i>
-                <i class="fa-solid fa-arrow-left" onClick={() => getDirection('left')}></i>
+            <div className={model ? 'model open' : 'model'} >
+                <img src={tempImg} onScroll={() => setModel(false)} />
+                <i className="fa-solid fa-xmark" onClick={() => setModel(false)} ></i>
+                <i className="fa-solid fa-arrow-right" onClick={() => getDirection('right')}></i>
+                <i className="fa-solid fa-arrow-left" onClick={() => getDirection('left')}></i>
             </div>
             <div data-aos={aos} data-aos-offset={aos_offset} className="realEstateEl" onClick={() => getImg(photo.imageUrl)}>
                 <img className="realEstateImage" src={photo.imageUrl} style={{ width: '100%' }} />

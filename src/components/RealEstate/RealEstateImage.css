@@ -1,3 +1,64 @@
+/* Main section */
+
+.realEstate {
+    position: relative;
+}
+
+/* Carousel */
+
+.carousel {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: -255px;
+    left: 0;
+}
+
+.carousel__image {
+    width: 1000px;
+    height: 600px;
+}
+
+.carousel > .fa-arrow-right {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: black;
+    z-index: 999;
+    cursor: pointer;
+    user-select: none;
+}
+
+.carousel > .fa-arrow-left {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: black;
+    z-index: 999;
+    cursor: pointer;
+    user-select: none;
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
+
+/* Gallery */
+
 .realEstate__list {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -6,7 +67,7 @@
     -moz-column-width: 33%;
     column-width: 33%;
 
-    padding: 0 100px;
+    padding: 0 200px;
     margin-bottom: 50px;
 }
 
