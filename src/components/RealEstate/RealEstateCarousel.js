@@ -25,10 +25,11 @@ const RealEstateCarousel = ({
         return null;
     }
 
+    <i class="fa-regular fa-arrow-right-long"></i>
     return (
         <section className="carousel">
-            <i className="fa-solid fa-arrow-left" onClick={previousSlide}></i>
-            <i className="fa-solid fa-arrow-right" onClick={nextSlide}></i>
+            <i className="fa-solid fa-arrow-left-long" onClick={previousSlide}></i>
+            <i className="fa-solid fa-arrow-right-long" onClick={nextSlide}></i>
             {images.map((slide, index) => {
                 return (
                     <div className={index == current ? 'slide active' : 'slide'} key={index}>

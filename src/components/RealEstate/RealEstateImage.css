@@ -8,7 +8,7 @@
 
 .carousel {
     position: absolute;
-    height: 100vh;
+    height: 100.5vh;
     width: 100%;
 
     overflow: hidden;
@@ -29,27 +29,44 @@
     width: 100%;
 }
 
-.carousel > .fa-arrow-right {
+.carousel > .fa-arrow-right-long,
+.carousel > .fa-arrow-left-long {
     position: absolute;
-    top: 50%;
-    right: 32px;
+    
     font-size: 3rem;
-    color: black;
+    color: #9a9a9a;
     z-index: 999;
     cursor: pointer;
     user-select: none;
+
+    transition: all 200ms ease-in-out;
 }
 
-.carousel > .fa-arrow-left {
+.carousel > .fa-arrow-right-long:hover,
+.carousel > .fa-arrow-left-long:hover {
+    color: #2d2d2d;
+}
+
+.carousel > .fa-arrow-left-long {
+    top: 50%;
+    left: 32px;
+}
+
+.carousel > .fa-arrow-right-long {
+    top: 50%;
+    right: 32px;
+}
+
+/* .carousel > .fa-arrow-left-long {
     position: absolute;
     top: 50%;
     left: 32px;
     font-size: 3rem;
-    color: black;
+    color: #9a9a9a;
     z-index: 999;
     cursor: pointer;
     user-select: none;
-}
+} */
 
 .slide {
     opacity: 0;
