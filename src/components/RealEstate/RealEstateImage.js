@@ -40,7 +40,7 @@ const RealEstateImage = ({
 
     return (
         <>
-            <div className={model ? 'model open' : 'model'} >
+            <div className={model ? 'model open' : 'model'} onScroll={() => setModel(false)} >
                 <img src={tempImg} onScroll={() => setModel(false)} />
                 <i className="fa-solid fa-xmark" onClick={() => setModel(false)} ></i>
                 <i className="fa-solid fa-arrow-right" onClick={() => getDirection('right')}></i>

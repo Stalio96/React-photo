@@ -11,12 +11,14 @@
     height: 130px;
 
     font-family: 'Montserrat', sans-serif;
+
 }
 
 .header__items {
     display: flex;
-
+    
     gap: 50px;
+    z-index: 999;
 }
 
 .header__item {
@@ -38,4 +40,6 @@
     letter-spacing: 0.25rem;
 
     color: #2d2d2d;
+
+    z-index: 999;
 }
