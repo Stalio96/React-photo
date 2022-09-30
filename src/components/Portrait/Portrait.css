@@ -1,3 +1,18 @@
+.portraitCarousel {
+    height: 700px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 100px;
+}
+
+.portrait__carousel__image {
+    height: 700px;
+    margin: 0 15px;
+}
+
 .portrait__list {
     -webkit-column-count: 4;
     -moz-column-count: 4;
@@ -5,7 +20,7 @@
     -webkit-column-width: 25%;
     -moz-column-width: 25%;
     column-width: 25;
-    padding: 0 100px;
+    padding: 0 200px;
 
     margin-bottom: 50px;
 }
