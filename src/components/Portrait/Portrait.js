@@ -25,7 +25,7 @@ const Portrait = () => {
         <section className='portrait'>
             <PortraitCarousel images={portrait}/>
             <div className="portrait__list">
-                {portrait.map(x => <PortraitImage aos={'slide-left'} aos_offset={'100'} key={x._id} photo={x} />)}
+                {portrait.map(x => <PortraitImage aos={'zoom-out'} aos_offset={'100'} key={x._id} photo={x} />)}
             </div>
         </section>
     )
