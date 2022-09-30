@@ -4,8 +4,8 @@ import 'aos/dist/aos.css';
 import { useState, useEffect } from "react";
 
 import * as photoService from '../../services/photoService';
-import RealEstateCarousel from './RealEstateCarousel';
 
+import RealEstateCarousel from './RealEstateCarousel';
 import RealEstateImage from "./RealEstateImage";
 
 const carousel = [
@@ -31,16 +31,14 @@ const RealEstate = () => {
         photoService.getRealEstates()
             .then(result => {
                 setRealEstate(result);
-                console.log(result);
             }).catch(err => {
                 console.log(err);
             })
-        // Aos.refresh();
     }, []);
 
     return (
         <section className='realEstate'>
-            <RealEstateCarousel className="realEstateCarousel" images={carousel} />
+            <RealEstateCarousel images={carousel} />
             <div className="realEstate__list">
                 {realEstate.map(x => <RealEstateImage aos={'fade-up'} aos_offset={'100'} key={x._id} photo={x} />)}
             </div>

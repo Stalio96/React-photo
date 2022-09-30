@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import './RealEstateImage.css';
+import './Product.css';
 
-const RealEstateCarousel = ({
+const ProductCarousel = ({
     images
 }) => {
     let [current, setCurrent] = useState(0);
@@ -23,15 +23,15 @@ const RealEstateCarousel = ({
     if (!Array.isArray(images) || images.length <= 0) {
         return null;
     }
-
+    
     return (
-        <section className="realEstateCarousel">
+        <section className="productCarousel">
             <i className="fa-solid fa-arrow-left-long" onClick={previousSlide}></i>
             <i className="fa-solid fa-arrow-right-long" onClick={nextSlide}></i>
             {images.map((slide, index) => {
                 return (
                     <div className={index == current ? 'slide active' : 'slide'} key={index}>
-                        {index == current && (<img src={slide.image} className="carousel__image" />)}
+                        {index == current && (<img src={slide.imageUrl} className="product__carousel__image" />)}
                     </div>
                 )
             })}
@@ -39,4 +39,4 @@ const RealEstateCarousel = ({
     );
 }
 
-export default RealEstateCarousel;
+export default ProductCarousel;
