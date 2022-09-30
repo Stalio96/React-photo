@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 
+.contact {
+    background-color: #f6f6f6;
+
+    display: block;
+    width: 70vw;
+
+    padding: 30px;
+
+    margin: 0 auto 50px;
+}
+
 .contact__container {
     height: 562px;
 
