@@ -34,12 +34,12 @@ const ProductImage = ({
             </div>
             <div data-aos={aos} data-aos-offset={aos_offset} className="productEl" onClick={() => getImg(photo.imageUrl)}>
                 <img className="img" src={photo.imageUrl} style={{ width: '100%' }} />
+                {
+                    user.username
+                        ? <i onClick={deleteHandler} className="fa-regular fa-trash-can"></i>
+                        : null
+                }
             </div>
-            {
-                user.username
-                    ? <i onClick={deleteHandler} className="fa-regular fa-trash-can"></i>
-                    : null
-            }
         </>
     )
 }

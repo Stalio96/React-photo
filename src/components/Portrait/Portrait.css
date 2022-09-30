@@ -117,7 +117,7 @@
     margin-bottom: 12px;
 }
 
-.portrait__list .portraitEl:hover {
+.portrait__list .portraitEl > .img:hover {
     filter: opacity(.7);
 }
 

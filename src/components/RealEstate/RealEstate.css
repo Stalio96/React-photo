@@ -94,7 +94,7 @@
     margin-bottom: 12px;
 }
 
-.realEstate__list .realEstateEl:hover {
+.realEstate__list .realEstateEl > .img:hover {
     filter: opacity(.8);
 }
 
