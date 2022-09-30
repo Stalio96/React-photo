@@ -23,12 +23,28 @@ const Create = () => {
             await axios.post("http://localhost:3030/api/catalog/createRealEstate", formData, { headers: { 'Content-Type': 'multipart/form-data' } });
 
             navigate('/');
+        }else if (caption == 'Real Estate-carousel') {
+            const formData = new FormData();
+            formData.append('image', file);
+            formData.append('caption', caption);
+
+            await axios.post("http://localhost:3030/api/catalog/createRealEstateCarousel", formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+
+            navigate('/');
         } else if (caption == 'Portrait') {
             const formData = new FormData();
             formData.append('image', file);
             formData.append('caption', caption);
 
             await axios.post("http://localhost:3030/api/catalog/createPortrait", formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+
+            navigate('/portrait');
+        }else if (caption == 'Portrait-carousel') {
+            const formData = new FormData();
+            formData.append('image', file);
+            formData.append('caption', caption);
+
+            await axios.post("http://localhost:3030/api/catalog/createPortraitCarousel", formData, { headers: { 'Content-Type': 'multipart/form-data' } });
 
             navigate('/portrait');
         } else if (caption == 'Product') {
@@ -39,6 +55,14 @@ const Create = () => {
             await axios.post("http://localhost:3030/api/catalog/createProduct", formData, { headers: { 'Content-Type': 'multipart/form-data' } });
 
             navigate('/product');
+        }else if (caption == 'Product-carousel') {
+            const formData = new FormData();
+            formData.append('image', file);
+            formData.append('caption', caption);
+
+            await axios.post("http://localhost:3030/api/catalog/createProductCarousel", formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+
+            navigate('/product');
         }
     }
 
@@ -47,8 +71,11 @@ const Create = () => {
             <input onChange={e => setFile(e.target.files[0])} type="file" accept="image/*"></input>
             <select name='caption' value={caption} onChange={e => setCaption(e.target.value)} type="text" placeholder="caption">
                 <option value="Real Estate">Real Estate</option>
+                <option value="Real Estate-carousel">Real Estate-carousel</option>
                 <option value="Portrait">Portrait</option>
+                <option value="Portrait-carousel">Portrait-carousel</option>
                 <option value="Product">Product</option>
+                <option value="Product-carousel">Product-carousel</option>
             </select>
 
             <input type="submit" />

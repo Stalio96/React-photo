@@ -1,14 +1,13 @@
 import { useState } from "react";
 
 import * as photoService from '../../services/photoService';
-import { useAuthContext } from "../../contexts/AuthContext";
 
 const PortraitImage = ({
     photo,
     aos,
-    aos_offset
+    aos_offset,
+    user
 }) => {
-    const { user } = useAuthContext();
     const [model, setModel] = useState(false);
     const [tempImg, setTempImg] = useState('');
 

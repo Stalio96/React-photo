@@ -2,11 +2,14 @@ import { useState } from "react";
 
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
+import * as photoService from '../../services/photoService';
+
 import { Swiper, SwiperSlide, pagination } from 'swiper/react';
 import 'swiper/css';
 
 const PortraitCarousel = ({
-    images
+    images,
+    user
 }) => {
     // let [current, setCurrent] = useState(0);
     // const length = images.length;
@@ -19,6 +22,13 @@ const PortraitCarousel = ({
     //     setCurrent(current === 0 ? length - 1 : current - 1);
     // }
 
+    const deleteHandler = (id) => {
+        photoService.deletePortraitCarousel(id)
+            .then(() => {
+                console.log('deleted');
+            })
+    }
+
     if (!Array.isArray(images) || images.length <= 0) {
         return null;
     }
@@ -29,7 +39,15 @@ const PortraitCarousel = ({
             slidesPerView={3}
             pagination={{ clickable: false }}
         >
-            {images.map(x => <SwiperSlide className='swipeCont' key={x._id}><img className="swipeImg" src={x.imageUrl} /></SwiperSlide>)}
+            {images.map(x => <SwiperSlide id='slider' className='swipeCont' key={x._id}>
+                <img className="swipeImg" src={x.imageUrl} />
+                {
+                user.username
+                    ? <i onClick={deleteHandler(x._id)} className="fa-regular fa-trash-can"></i>
+                    : null
+            }
+            </SwiperSlide>)}
+            
         </Swiper>
         // <section className="portraitCarousel">
         //     <i className="fa-solid fa-arrow-left-long" onClick={previousSlide}></i>

@@ -71,6 +71,18 @@
     transform: scale(1.08);
 }
 
+#slider {
+    position: relative;
+}
+
+#slider > .fa-trash-can {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    font-size: 50px;
+}
+
 /* Gallery */
 
 .realEstate__list {

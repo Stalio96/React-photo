@@ -23,8 +23,25 @@ export async function getRealEstates() {
     return result;
 }
 
+export async function getRealEstatesCarousel() {
+    const response = await fetch(`${baseUrl}/api/catalog/realestateCarousel`);
+
+    const result =  await response.json();
+
+    return result;
+}
+
 export async function deleteRealEstate(photoId) {
     const response = await fetch(`${baseUrl}/api/catalog/deleteRealEstate/${photoId}`, {
+        method: 'DELETE',
+        headers: {
+            'X-Authorization': getToken()
+        }
+    });
+}
+
+export async function deleteRealEstateCarousel(photoId) {
+    const response = await fetch(`${baseUrl}/api/catalog/deleteRealEstateCarousel/${photoId}`, {
         method: 'DELETE',
         headers: {
             'X-Authorization': getToken()
@@ -40,8 +57,25 @@ export async function getPortrait() {
     return result;
 }
 
+export async function getPortraitCarousel() {
+    const response = await fetch(`${baseUrl}/api/catalog/portraitCarousel`);
+
+    const result =  await response.json();
+
+    return result;
+}
+
 export async function deletePortrait(photoId) {
     const response = await fetch(`${baseUrl}/api/catalog/deletePortrait/${photoId}`, {
+        method: 'DELETE',
+        headers: {
+            'X-Authorization': getToken()
+        }
+    });
+}
+
+export async function deletePortraitCarousel(photoId) {
+    const response = await fetch(`${baseUrl}/api/catalog/deletePortraitCarousel/${photoId}`, {
         method: 'DELETE',
         headers: {
             'X-Authorization': getToken()
@@ -57,8 +91,25 @@ export async function getProduct() {
     return result;
 }
 
+export async function getProductCarousel() {
+    const response = await fetch(`${baseUrl}/api/catalog/productCarousel`);
+
+    const result =  await response.json();
+
+    return result;
+}
+
 export async function deleteProduct(photoId) {
     const response = await fetch(`${baseUrl}/api/catalog/deleteProduct/${photoId}`, {
+        method: 'DELETE',
+        headers: {
+            'X-Authorization': getToken()
+        }
+    });
+}
+
+export async function deleteProductCarousel(photoId) {
+    const response = await fetch(`${baseUrl}/api/catalog/deleteProductCarousel/${photoId}`, {
         method: 'DELETE',
         headers: {
             'X-Authorization': getToken()
