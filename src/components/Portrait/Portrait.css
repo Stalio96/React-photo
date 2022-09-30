@@ -1,5 +1,22 @@
 /* Carousel */
 
+.swipe {
+    height: 700px;
+
+    margin-bottom: 200px;
+
+    background-color: black;
+}
+
+.swipeCont {
+    height: 800px;
+    overflow: hidden;
+}
+
+.swipeImg {
+    width: 100%;
+}
+
 .portraitCarousel {
     position: relative;
     height: 86vh;
@@ -51,13 +68,15 @@
     right: 32px;
 }
 
-.slide {
-    opacity: 0;
+.portraitCarousel > .portraiSlide {
+    /* opacity: 0; */
+    right: 0;
     transition-duration: 1s ease;
 }
 
-.slide.active {
-    opacity: 1;
+.portraitCarousel > .portraiSlide.active {
+    /* opacity: 1; */
+    left: 0;
     transition-duration: 1s;
     transform: scale(1.08);
 }
