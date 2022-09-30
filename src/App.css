@@ -1,3 +1,12 @@
+@import url('../src/components/Portrait/Portrait.css');
+@import url('../src/components/Product/Product.css');
+@import url('../src/components/RealEstate/RealEstate.css');
+@import url('../src/components/About/About.css');
+@import url('../src/components/Contact/Contact.css');
+@import url('../src/components/Footer/Footer.css');
+@import url('../src/components/Header/Header.css');
+@import url('../src/components/Socials/Socials.css');
+
 .App {
   text-align: center;
 

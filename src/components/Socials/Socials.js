@@ -1,5 +1,3 @@
-import './Socials.css';
-
 const Socials = () => {
 
     return (

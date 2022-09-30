@@ -3,7 +3,6 @@ import { useState } from "react";
 import * as photoService from '../../services/photoService';
 import { useAuthContext } from "../../contexts/AuthContext";
 
-import './RealEstateImage.css';
 
 const RealEstateImage = ({
     photo,

@@ -7,8 +7,6 @@ import * as photoService from '../../services/photoService';
 
 import PortraitImage from "./PortraitImage";
 
-import './Portrait.css';
-
 const Portrait = () => {
     const [portrait, setPortrait] = useState([]);
 
@@ -17,7 +15,6 @@ const Portrait = () => {
         photoService.getPortrait()
             .then(result => {
                 setPortrait(result);
-                console.log(result);
             }).catch(err => {
                 console.log(err);
             })

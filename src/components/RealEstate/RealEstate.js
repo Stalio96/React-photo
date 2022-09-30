@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import * as photoService from '../../services/photoService';
 
 import RealEstateCarousel from './RealEstateCarousel';
-import RealEstateImage from "./RealEstateImage";
+import RealEstateImage from './RealEstateImage';
 
 const carousel = [
     {

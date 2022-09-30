@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-import './RealEstateImage.css';
 
 const RealEstateCarousel = ({
     images
