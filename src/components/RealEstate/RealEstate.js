@@ -2,6 +2,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 
 import * as photoService from '../../services/photoService';
 
@@ -42,6 +43,8 @@ const RealEstate = () => {
             <div className="realEstate__list">
                 {realEstate.map(x => <RealEstateImage aos={'fade-up'} aos_offset={'100'} key={x._id} photo={x} />)}
             </div>
+
+            <Link className='realEstateContact' to='/contact'>CONTACT</Link>
         </section>
     )
 }
