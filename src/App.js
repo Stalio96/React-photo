@@ -8,7 +8,6 @@ import Logout from './components/Logout/Logout';
 import Contact from './components/Contact/Contact';
 import Create from './components/Create/Create';
 import Header from './components/Header/Header';
-import Home from './components/Home/Home';
 import Product from './components/Product/Product';
 import Socials from './components/Socials/Socials';
 import RealEstate from './components/RealEstate/RealEstate';
@@ -30,7 +29,6 @@ function App() {
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/create' element={<Create />} />
-            <Route path='/home' element={<Home />} />
             <Route path='/product' element={<Product />} />
             <Route path='/socials' element={<Socials />} />
             <Route path='/admin' element={<Admin />} />

@@ -16,8 +16,9 @@ const Product = () => {
 
     useEffect(() => {
         Aos.init();
-        photoService.getPortraitCarousel()
+        photoService.getProductCarousel()
             .then(result => {
+                console.log(result)
                 setCarousel(result);
             }).catch(err => {
                 console.log(err);
