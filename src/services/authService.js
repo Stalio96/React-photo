@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3030';
+const baseUrl = 'https://guarded-inlet-03061.herokuapp.com';
 
 export async function login(username, password) {
     const response = await fetch(`${baseUrl}/admin/login`, {
