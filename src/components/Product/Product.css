@@ -2,7 +2,7 @@
 
 .productCarousel {
     position: relative;
-    height: 86vh;
+    height: 80vh;
     width: 100%;
 
     overflow: hidden;
@@ -19,7 +19,7 @@
 }
 
 .product__carousel__image {
-    height: 86vh;
+    height: 80vh;
     /* width: 100%; */
 }
 
