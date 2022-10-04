@@ -12,6 +12,8 @@ import Product from './components/Product/Product';
 import Socials from './components/Socials/Socials';
 import RealEstate from './components/RealEstate/RealEstate';
 import Portrait from './components/Portrait/Portrait';
+import Price from './components/Price/Price';
+import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
 
 import { AuthProvider } from './contexts/AuthContext';
@@ -32,7 +34,9 @@ function App() {
             <Route path='/product' element={<Product />} />
             <Route path='/socials' element={<Socials />} />
             <Route path='/admin' element={<Admin />} />
+            <Route path='/price' element={<Price />} />
             <Route path='/logout' element={<Logout />} />
+            <Route path='*' element={<NotFound />} />
           </Routes>
         </main>
 

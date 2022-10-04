@@ -18,7 +18,6 @@ const Product = () => {
         Aos.init();
         photoService.getProductCarousel()
             .then(result => {
-                console.log(result)
                 setCarousel(result);
             }).catch(err => {
                 console.log(err);
