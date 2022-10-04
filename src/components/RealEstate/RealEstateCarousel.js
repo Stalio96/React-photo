@@ -9,11 +9,11 @@ const RealEstateCarousel = ({
     let [current, setCurrent] = useState(0);
     const length = images.length;
 
-    if(images.length > 1) {
-        setTimeout(() => {
-            setCurrent((current + 1) === length ? 0 : current + 1);
-        }, 4500);
-    }
+    // if(images.length > 1) {
+    //     setTimeout(() => {
+    //         setCurrent((current + 1) === length ? 0 : current + 1);
+    //     }, 4500);
+    // }
 
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1);
