@@ -1,9 +1,9 @@
 /* Carousel */
 
 .swipe {
-    height: 700px;
+    height: 550px;
 
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 
     background-color: black;
 }
@@ -17,7 +17,7 @@
     width: 100%;
 }
 
-.portraitCarousel {
+/* .portraitCarousel {
     position: relative;
     height: 86vh;
     width: 100%;
@@ -33,14 +33,14 @@
     margin-bottom: 100px;
 
     background-color: black;
-}
+} */
 
-.portrait__carousel__image {
+/* .portrait__carousel__image {
     height: 86vh;
-    /* width: 100%; */
-}
+    width: 100%;
+} */
 
-.portraitCarousel > .fa-arrow-right-long,
+/* .portraitCarousel > .fa-arrow-right-long,
 .portraitCarousel > .fa-arrow-left-long {
     position: absolute;
     
@@ -51,9 +51,9 @@
     user-select: none;
 
     transition: all 200ms ease-in-out;
-}
+} */
 
-.portraitCarousel > .fa-arrow-right-long:hover,
+/* .portraitCarousel > .fa-arrow-right-long:hover,
 .portraitCarousel > .fa-arrow-left-long:hover {
     color: #2d2d2d;
 }
@@ -69,17 +69,17 @@
 }
 
 .portraitCarousel > .portraiSlide {
-    /* opacity: 0; */
+    opacity: 0;
     right: 0;
     transition-duration: 1s ease;
 }
 
 .portraitCarousel > .portraiSlide.active {
-    /* opacity: 1; */
+    opacity: 1;
     left: 0;
     transition-duration: 1s;
     transform: scale(1.08);
-}
+} */
 
 /* Gallery */
 

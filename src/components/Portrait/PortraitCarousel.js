@@ -16,7 +16,7 @@ const PortraitCarousel = ({
             className='swipe'
             spaceBetween={50}
             slidesPerView={3}
-            pagination={{ clickable: false }}
+            pagination={{ clickable: true }}
         >
             {images.map(x => {
                 const photoId = x._id;
