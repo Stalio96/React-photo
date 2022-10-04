@@ -77,3 +77,51 @@
 .about__instagram:hover {
     background-color: #424242;
 }
+
+@media screen and (max-width: 992px) {
+    .about__section {
+        gap: 30px;
+    }
+
+    .about__img {
+        width: 450px;
+    }
+
+    .about__container {
+        width: 400px;
+        font-size: 14px;
+    }
+
+    .about__text {
+        width: 400px;
+    }
+
+    .about__heading {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 883px) {
+    .about__img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        padding: 0 50px;
+    }
+
+    .about__section {
+        flex-direction: column;
+    }
+
+    .about__img {
+        width: 100%;
+    }
+
+    .about__container,
+    .about__text {
+        width: 100%;
+    }
+}
