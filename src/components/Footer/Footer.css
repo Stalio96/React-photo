@@ -76,3 +76,19 @@ html {
 .fa-arrow-up-long:hover {
     color: #9a9a9a;
 }
+
+@media screen and (max-width: 992px) {
+    .footer__copyright {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__items {
+        flex-direction: column;
+    }
+
+    .footer__items {
+        font-weight: 400;
+    }
+}

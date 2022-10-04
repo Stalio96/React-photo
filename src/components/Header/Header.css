@@ -14,9 +14,22 @@
 
 }
 
+.header__menu {
+    border: none;
+    background-color: unset;
+
+    font-size: 30px;
+
+    color: #2d2d2d;
+
+    display: none;
+
+    z-index: 999;
+}
+
 .header__items {
     display: flex;
-    
+
     gap: 30px;
     z-index: 999;
 }
@@ -60,4 +73,42 @@
     color: #9a9a9a;
 
     font-size: 21px;
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        justify-content: space-between;
+
+        padding: 0 20px;
+    }
+
+    .header__menu {
+        display: inline;
+    }
+
+    .header__items {
+        position: absolute;
+
+        left: 0;
+        top: 110px;
+
+        width: 100vw;
+
+        background-color: #ffffff;
+
+        padding: 20px 0;
+
+        z-index: 1000;
+        
+        display: none;
+
+        transition: all 500ms ease-in-out;
+    }
+
+    .header__items.open,
+    .header .header__menu:hover+.header__items {
+        display: flex;
+        flex-direction: column;
+    }
+
 }

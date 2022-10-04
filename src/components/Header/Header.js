@@ -19,6 +19,8 @@ const Header = () => {
         <header className="header">
             <Link className="header__title" to='/'>ILIYANA'S PHOTOS</Link>
 
+            <button className="header__menu"><i class="fa-sharp fa-solid fa-bars"></i></button>
+
             <nav className="header__items">
                 <li className="header__item">
                     <Link className="header__item__link" to='/'>REAL ESTATE</Link>
