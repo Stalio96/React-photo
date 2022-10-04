@@ -1,0 +1,51 @@
+.notFound {
+    background-color: #f6f6f6;
+    width: 60%;
+    height: 400px;
+
+    display: block;
+
+    margin: 50px auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.notFound__title {
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+.notFound__title:first-child {
+    font-size: 120px;
+    margin-bottom: -20px;
+}
+
+.notFound__title:nth-child(2) {
+    font-size: 30px;
+}
+
+.notFound__text {
+    font-weight: 500;
+    width: 500px;
+    display: block;
+    margin: 0 auto 70px;
+}
+
+.notFound__link {
+    padding: 15px 45px;
+
+    text-decoration: none;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 3px;
+
+    background-color: #2d2d2d;
+    color: white;
+
+    transition: all 200ms ease-in-out;
+}
+
+.notFound__link:hover {
+    background-color: #424242;
+}
