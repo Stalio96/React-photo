@@ -144,7 +144,7 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 481px) {
     .realEstate__list {
         -webkit-column-count: 1;
         -moz-column-count: 1;
