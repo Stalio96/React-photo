@@ -128,11 +128,19 @@
     background-color: #424242;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     .realEstate__list {
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2;
+
+        padding: 0 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .realEstate__list {
+        padding: 0 50px;
     }
 }
 
@@ -144,6 +152,8 @@
         --webkit-column-width: 100%;
         -moz-column-width: 100%;
         column-width: 100%;
+
+        padding: 0 20px;
     }
 }
 
