@@ -21,25 +21,25 @@ const Header = () => {
 
             <nav className="header__items">
                 <li className="header__item">
-                    <Link className="item__link" to='/'>REAL ESTATE</Link>
+                    <Link className="header__item__link" to='/'>REAL ESTATE</Link>
                 </li>
                 <li className="header__item">
-                    <Link className="item__link" to='/portrait'>PORTRAIT</Link>
+                    <Link className="header__item__link" to='/portrait'>PORTRAIT</Link>
                 </li>
                 <li className="header__item">
-                    <Link className="item__link" to='/product'>PRODUCT</Link>
+                    <Link className="header__item__link" to='/product'>PRODUCT</Link>
                 </li>
                 <li className="header__item">
-                    <Link className="item__link" to='/price'>PRICE</Link>
+                    <Link className="header__item__link" to='/price'>PRICE</Link>
                 </li>
                 <li className="header__item">
-                    <Link className="item__link" to='/about'>ABOUT</Link>
+                    <Link className="header__item__link" to='/about'>ABOUT</Link>
                 </li>
                 <li className="header__item">
-                    <Link className="item__link" to='/contact'>CONTACT</Link>
+                    <Link className="header__item__link" to='/contact'>CONTACT</Link>
                 </li>
                 <li className="header__item">
-                    <Link className="item__link" to='/socials'>SOCIALS</Link>
+                    <Link className="header__item__link" to='/socials'>SOCIALS</Link>
                 </li>
 
                 {user.username
