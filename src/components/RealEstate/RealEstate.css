@@ -1,8 +1,6 @@
 /* Main section */
 
 .realEstate {
-    position: relative;
-
     margin-bottom: 100px;
 }
 
@@ -19,7 +17,7 @@
     justify-content: center;
     align-items: center;
 
-    top: -1035px;
+    top: 0;
     left: 0;
 
     background-color: black;
