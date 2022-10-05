@@ -1,0 +1,48 @@
+.price {
+    background-color: #f6f6f6;
+
+    width: 50vw;
+
+    display: block;
+
+    margin: 0 auto 50px;
+
+    padding: 20px 50px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    text-align: center;
+}
+
+.price__heading {
+    font-weight: 500;
+
+    font-size: 30px;
+}
+
+.price__container {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    color: #9a9a9a;
+}
+
+.price__text {
+    text-transform: uppercase;
+
+    font-size: 25px;
+}
+
+.price__prices {
+    font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .price {
+        width: 70vw;
+    }
+}

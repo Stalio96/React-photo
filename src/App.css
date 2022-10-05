@@ -7,6 +7,7 @@
 @import url('../src/components/Header/Header.css');
 @import url('../src/components/Socials/Socials.css');
 @import url('../src/components/NotFound/NotFound.css');
+@import url('../src/components/Price/Price.css');
 
 .App {
   text-align: center;

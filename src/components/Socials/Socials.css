@@ -37,6 +37,14 @@
     text-transform: uppercase;
 
     letter-spacing: 2px;
+
+    color: #9a9a9a;
+
+    transition: all 200ms ease-in-out;
+}
+
+.socials__insta__container__instagram:hover {
+    font-weight: bold;
 }
 
 .socials__insta__container__text,
@@ -57,4 +65,28 @@
 .socials__img {
     width: 400px;
     height: auto;
+}
+
+@media screen and (max-width: 860px) {
+    .socials__container {
+        width: 750px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .socials__container {
+        flex-direction: column;
+
+        gap: 0px;
+
+        width: auto;
+        height: auto;
+
+        margin: 30px;
+        padding-top: 20px;
+    }
+
+    .socials__img {
+        width: 300px;
+    }
 }
