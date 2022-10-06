@@ -112,3 +112,19 @@
 .fa-location-dot {
     color: #2d2d2d;
 }
+
+@media screen and (max-width: 992px) {
+    .contact {
+        height: 950px;
+    }
+
+    .contact__items {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact__heading {
+        font-size: 40px;
+    }
+}
