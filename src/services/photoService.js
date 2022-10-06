@@ -1,5 +1,5 @@
-// const baseUrl = 'https://guarded-inlet-03061.herokuapp.com';
-const baseUrl = 'http://localhost:3030';
+const baseUrl = 'https://guarded-inlet-03061.herokuapp.com';
+// const baseUrl = 'http://localhost:3030';
 
 // export async function createRealEstate(image, caption) {
 //     const response = await fetch(`${baseUrl}/api/catalog/createRealEstate`, {
