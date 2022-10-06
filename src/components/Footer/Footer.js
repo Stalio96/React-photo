@@ -36,7 +36,7 @@ const Footer = () => {
                 </nav>
             </div>
 
-            <p className="footer__copyright">Copyright © 2022 ILIYANA'S PHOTOS. All Rights Reserved.</p>
+            <p className="footer__copyright">Copyright © 2022 032PHOTO&VIDEO. All Rights Reserved.</p>
 
             <a className="go-to-top__link" href='#'><i className="fa-solid fa-arrow-up-long"></i></a>
         </footer>

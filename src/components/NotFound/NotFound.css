@@ -49,3 +49,27 @@
 .notFound__link:hover {
     background-color: #424242;
 }
+
+@media screen and (max-width: 768px) {
+    .notFound {
+        width: 80%;
+
+        margin: 0 auto 50px;
+    }
+
+    .notFound__text {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .notFound {
+        width: 90%;
+
+        margin: -80px auto 50px;
+    }
+
+    .notFound__text {
+        width: 350px;
+    }
+}
