@@ -128,17 +128,36 @@
     background-color: #424242;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {    
+    .realEstateCarousel {
+        height: 60vh;
+    }
+
     .realEstate__list {
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2;
 
         padding: 0 100px;
+
+        margin-top: 70vh;
     }
+
+    /* .carousel__image {
+        height: 100%;
+        width: auto;
+    } */
 }
 
 @media screen and (max-width: 768px) {
+    .realEstateCarousel {
+        height: 70vh;
+    }
+
+    .carousel__image {
+        width: 100%;
+    }
+
     .realEstate__list {
         padding: 0 50px;
     }

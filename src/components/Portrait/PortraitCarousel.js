@@ -1,5 +1,7 @@
 import * as photoService from '../../services/photoService';
 
+import useDimensions from '../../hooks/useDimensions';
+
 import { Swiper, SwiperSlide, pagination } from 'swiper/react';
 import 'swiper/css';
 
@@ -7,15 +9,20 @@ const PortraitCarousel = ({
     images,
     user
 }) => {
+    const { height, width } = useDimensions();
+
+    console.log(width)
 
     if (!Array.isArray(images) || images.length <= 0) {
         return null;
     }
+
+
     return (
         <Swiper
             className='swipe'
             spaceBetween={50}
-            slidesPerView={3}
+            slidesPerView={width < 992 ? 1 : 3}
             pagination={{ clickable: true }}
         >
             {images.map(x => {

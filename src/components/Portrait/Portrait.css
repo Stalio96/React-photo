@@ -129,6 +129,16 @@
 
         padding: 0 100px;
     }
+
+    .portrait__carousel__image {
+        height: 100%;
+        width: auto;
+    }
+
+    .swipeImg {
+        height: 100%;
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 768px) {
