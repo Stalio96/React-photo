@@ -40,7 +40,7 @@
 
     text-align: left;
 
-    color: #2d2d2d;
+    color: var(--color-gray-dark);
 }
 
 .about__text {
@@ -65,7 +65,7 @@
 
     text-decoration: none;
 
-    background-color: #2d2d2d;
+    background-color: var(--color-gray-dark);
 
     padding: 14px 30px;
 

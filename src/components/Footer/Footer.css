@@ -36,7 +36,7 @@ html {
 
 .fa-brands,
 .item__link {
-    color: #2d2d2d;
+    color: var(--color-gray-dark);
 
     text-decoration: none;
 
@@ -45,7 +45,7 @@ html {
 
 .fa-brands:hover,
 .item__link:hover {
-    color: #9a9a9a;
+    color: var(--color-gray-light);
 }
 
 .footer__copyright {
@@ -64,7 +64,7 @@ html {
 }
 
 .fa-arrow-up-long {
-    color: #2d2d2d;
+    color: var(--color-gray-dark);
 
     font-size: 30px;
 
@@ -74,7 +74,7 @@ html {
 }
 
 .fa-arrow-up-long:hover {
-    color: #9a9a9a;
+    color: var(--color-gray-light);
 }
 
 @media screen and (max-width: 992px) {

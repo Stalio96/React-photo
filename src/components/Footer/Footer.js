@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="footer">
 
             <div className="footer__socials">
-                <a href='https://www.instagram.com/iliyanaivanov/' target="_blank"><i className="fa-brands fa-instagram"></i></a>
+                <a href='https://www.instagram.com/zerothreetwophotoandvideo/' target="_blank"><i className="fa-brands fa-instagram"></i></a>
                 <a href="https://www.facebook.com/iliyana.ivanov" target="_blank"><i className="fa-brands fa-square-facebook"></i></a>
             </div>
 

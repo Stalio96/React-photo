@@ -17,7 +17,7 @@ const Header = () => {
 
     return (
         <header className="header">
-            <Link className="header__title" to='/'>032PHOTO&VIDEO</Link>
+            <Link className="header__title" to='/'>ZERO THREE TWO</Link>
 
             <button className="header__menu"><i class="fa-sharp fa-solid fa-bars"></i></button>
 

@@ -35,7 +35,7 @@
     position: absolute;
     
     font-size: 3rem;
-    color: #9a9a9a;
+    color: var(--color-gray-light);
     z-index: 999;
     cursor: pointer;
     user-select: none;
@@ -45,7 +45,7 @@
 
 .realEstateCarousel > .fa-arrow-right-long:hover,
 .realEstateCarousel > .fa-arrow-left-long:hover {
-    color: #2d2d2d;
+    color: var(--color-gray-dark);
 }
 
 .realEstateCarousel > .fa-arrow-left-long {
@@ -118,7 +118,7 @@
     font-size: 18px;
     letter-spacing: 3px;
 
-    background-color: #2d2d2d;
+    background-color: var(--color-gray-dark);
     color: white;
 
     transition: all 200ms ease-in-out;
@@ -223,7 +223,7 @@
     font-size: 25px;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.4);
-    color: #ffffff;
+    color: var(--color-primary);
     cursor: pointer;
 }
 

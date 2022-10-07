@@ -9,8 +9,15 @@
 @import url('../src/components/NotFound/NotFound.css');
 @import url('../src/components/Price/Price.css');
 
+:root {
+  --color-primary: #ffffff;
+  --color-gray-light: #9a9a9a;
+  --color-gray-very-light: #f6f6f6;
+  --color-gray-dark: #2d2d2d;
+}
+
 .App {
   text-align: center;
 
-  background-color: #ffffff;
+  background-color: var(--color-primary);
 }

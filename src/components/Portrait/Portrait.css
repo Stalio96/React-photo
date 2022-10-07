@@ -45,7 +45,7 @@
     position: absolute;
     
     font-size: 3rem;
-    color: #9a9a9a;
+    color: var(--color-gray-light);
     z-index: 999;
     cursor: pointer;
     user-select: none;
@@ -55,7 +55,7 @@
 
 /* .portraitCarousel > .fa-arrow-right-long:hover,
 .portraitCarousel > .fa-arrow-left-long:hover {
-    color: #2d2d2d;
+    color: var(--color-gray-dark);
 }
 
 .portraitCarousel > .fa-arrow-left-long {

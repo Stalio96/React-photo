@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 
 .contact {
-    background-color: #f6f6f6;
+    background-color: var(--color-gray-very-light);
 
     display: block;
 
@@ -33,7 +33,7 @@
 
     letter-spacing: .25rem;
 
-    color: #2d2d2d;
+    color: var(--color-gray-dark);
 
     font-size: 60px;
 
@@ -110,7 +110,7 @@
 .fa-mobile-screen-button,
 .fa-envelope,
 .fa-location-dot {
-    color: #2d2d2d;
+    color: var(--color-gray-dark);
 }
 
 @media screen and (max-width: 992px) {
