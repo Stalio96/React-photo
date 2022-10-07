@@ -11,8 +11,6 @@ const PortraitCarousel = ({
 }) => {
     const { height, width } = useDimensions();
 
-    console.log(width)
-
     if (!Array.isArray(images) || images.length <= 0) {
         return null;
     }

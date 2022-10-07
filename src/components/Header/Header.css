@@ -76,17 +76,21 @@
 }
 
 @media screen and (max-width: 992px) {
-    .header {
+    /* .header {
         justify-content: space-between;
 
         padding: 0 20px;
-    }
+    } */
 
     .header__menu {
         display: inline;
     }
 
     .header__items {
+        display: none;
+    }
+
+    .drop__items {
         position: absolute;
 
         left: 0;
@@ -99,17 +103,15 @@
         padding: 20px 0;
 
         z-index: 1000;
-        
-        display: none;
 
         transition: all 500ms ease-in-out;
     }
 
-    .header__items.open,
-    .header .header__menu:hover+.header__items {
+    /* .drop__items.open,
+    .header .header__menu:hover+.drop__items {
         display: flex;
         flex-direction: column;
-    }
+    } */
 
 }
 

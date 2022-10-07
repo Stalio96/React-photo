@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
+
 import { useAuthContext } from "../../contexts/AuthContext";
+import useDimensions from '../../hooks/useDimensions';
+
+import DropDown from "./DropDown";
 
 const Header = () => {
     const { user } = useAuthContext();
+    const { height, width } = useDimensions();
+    const [isDrop, setIsDrop] = useState(false);
 
     const admin = (
         <>
@@ -15,11 +22,19 @@ const Header = () => {
         </>
     );
 
+    console.log(isDrop)
+
     return (
         <header className="header">
             <Link className="header__title" to='/'>ZERO THREE TWO</Link>
 
-            <button className="header__menu"><i class="fa-sharp fa-solid fa-bars"></i></button>
+            <button className="header__menu" onClick={() => setIsDrop(!isDrop)}><i class="fa-sharp fa-solid fa-bars"></i></button>
+
+            {
+                isDrop
+                    ? <DropDown user={user} admin={admin} />
+                    : null
+            }
 
             <nav className="header__items">
                 <li className="header__item">
