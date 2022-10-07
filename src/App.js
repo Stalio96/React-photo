@@ -15,12 +15,14 @@ import Portrait from './components/Portrait/Portrait';
 import Price from './components/Price/Price';
 import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 import { AuthProvider } from './contexts/AuthContext';
 
 function App() {
   return (
     <AuthProvider>
+      <ScrollToTop />
       <div className="App">
         <Header />
 
