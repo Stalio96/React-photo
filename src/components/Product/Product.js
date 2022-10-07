@@ -35,7 +35,7 @@ const Product = () => {
         <section className='product'>
             <ProductCarousel images={carousel} user={user} />
             <div className="product__list">
-                {product.map(x => <ProductImage aos={'flip-right'} aos_offset={'100'} key={x._id} photo={x} user={user} />)}
+                {product.map((x, i) => <ProductImage aos={'flip-right'} aos_offset={'100'} key={x._id} photo={x} user={user} index={i} product={product} />)}
             </div>
         </section>
     )

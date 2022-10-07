@@ -3,6 +3,8 @@ import { useState } from "react";
 import * as photoService from '../../services/photoService';
 
 const RealEstateImage = ({
+    realEstate,
+    index,
     photo,
     aos,
     aos_offset,
@@ -10,7 +12,8 @@ const RealEstateImage = ({
 }) => {
     const [model, setModel] = useState(false);
     const [tempImg, setTempImg] = useState('');
-    // const [way, setWay] = useState();
+    const [way, setWay] = useState(index);
+    const length = realEstate.length;
 
     const deleteHandler = (e) => {
         // e.preventDefault();    
@@ -22,12 +25,13 @@ const RealEstateImage = ({
     }
 
     const getDirection = (direction) => {
-        // if(direction == 'right'){
-
-        // }else if(direction == 'left'){
-
-        // }
-        console.log(photo)
+        if(direction == 'right'){
+            setWay(way == length - 1? 0 : way + 1);
+            setTempImg(realEstate[way].imageUrl);
+        }else if(direction == 'left'){
+            setWay(way === 0 ? length - 1 : way - 1);
+            setTempImg(realEstate[way].imageUrl);
+        }
     }
 
     const getImg = (imageUrl) => {

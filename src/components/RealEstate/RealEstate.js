@@ -37,7 +37,7 @@ const RealEstate = () => {
         <section className='realEstate'>
             <RealEstateCarousel images={carousel} user={user} />
             <div className="realEstate__list">
-                {realEstate.map(x => <RealEstateImage aos={'fade-up'} aos_offset={'100'} key={x._id} photo={x} user={user} />)}
+                {realEstate.map((x, i) => <RealEstateImage aos={'fade-up'} aos_offset={'100'} key={x._id} photo={x} user={user} index={i} realEstate={realEstate} />)}
             </div>
 
             <Link className='realEstateContact' to='/contact'>CONTACT</Link>
