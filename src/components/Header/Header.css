@@ -94,9 +94,9 @@
         position: absolute;
 
         left: 0;
-        top: 110px;
+        top: 109px;
 
-        width: 100vw;
+        width: 101vw;
 
         background-color: var(--color-primary);
 
@@ -107,6 +107,9 @@
         transition: all 500ms ease-in-out;
     }
 
+    .header__item {
+        margin-bottom: 20px;
+    }
     /* .drop__items.open,
     .header .header__menu:hover+.drop__items {
         display: flex;

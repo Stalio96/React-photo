@@ -22,17 +22,15 @@ const Header = () => {
         </>
     );
 
-    console.log(isDrop)
-
     return (
         <header className="header">
             <Link className="header__title" to='/'>ZERO THREE TWO</Link>
 
-            <button className="header__menu" onClick={() => setIsDrop(!isDrop)}><i class="fa-sharp fa-solid fa-bars"></i></button>
+            <button className="header__menu" onClick={() => setIsDrop(!isDrop)}><i className="fa-sharp fa-solid fa-bars"></i></button>
 
             {
                 isDrop
-                    ? <DropDown user={user} admin={admin} />
+                    ? <DropDown user={user} admin={admin} setIsDrop={setIsDrop} />
                     : null
             }
 

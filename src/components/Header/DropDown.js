@@ -2,31 +2,32 @@ import { Link } from 'react-router-dom';
 
 const DropDown = ({
     user,
-    admin
+    admin,
+    setIsDrop
 }) => {
 
     return (
         <nav className="drop__items">
             <li className="header__item">
-                <Link className="header__item__link" to='/'>REAL ESTATE</Link>
+                <Link className="header__item__link" onClick={() => setIsDrop(false)} to='/'>REAL ESTATE</Link>
             </li>
             <li className="header__item">
-                <Link className="header__item__link" to='/portrait'>PORTRAIT</Link>
+                <Link className="header__item__link" onClick={() => setIsDrop(false)} to='/portrait'>PORTRAIT</Link>
             </li>
             <li className="header__item">
-                <Link className="header__item__link" to='/product'>PRODUCT</Link>
+                <Link className="header__item__link" onClick={() => setIsDrop(false)} to='/product'>PRODUCT</Link>
             </li>
             <li className="header__item">
-                <Link className="header__item__link" to='/price'>PRICE</Link>
+                <Link className="header__item__link" onClick={() => setIsDrop(false)} to='/price'>PRICE</Link>
             </li>
             <li className="header__item">
-                <Link className="header__item__link" to='/about'>ABOUT</Link>
+                <Link className="header__item__link" onClick={() => setIsDrop(false)} to='/about'>ABOUT</Link>
             </li>
             <li className="header__item">
-                <Link className="header__item__link" to='/contact'>CONTACT</Link>
+                <Link className="header__item__link" onClick={() => setIsDrop(false)} to='/contact'>CONTACT</Link>
             </li>
             <li className="header__item">
-                <Link className="header__item__link" to='/socials'>SOCIALS</Link>
+                <Link className="header__item__link" onClick={() => setIsDrop(false)} to='/socials'>SOCIALS</Link>
             </li>
 
             {user.username
