@@ -42,8 +42,10 @@ const PortraitImage = ({
             <div className={model ? 'model open' : 'model'}>
                 <img src={tempImg} />
                 <i className="fa-solid fa-xmark" onClick={() => setModel(false)}></i>
-                <i className="fa-solid fa-arrow-right" onClick={() => getDirection('right')}></i>
-                <i className="fa-solid fa-arrow-left" onClick={() => getDirection('left')}></i>
+                <div className="icon__arrow left" onClick={() => getDirection('left')}></div>
+                <div className="icon__arrow right" onClick={() => getDirection('right')}></div>
+                {/* <i className="fa-solid fa-arrow-right" onClick={() => getDirection('right')}></i>
+                <i className="fa-solid fa-arrow-left" onClick={() => getDirection('left')}></i> */}
             </div>
             <div data-aos={aos} data-aos-offset={aos_offset} className="portraitEl" >
                 <img className="img" src={photo.imageUrl} style={{ width: '100%' }} onClick={() => getImg(photo.imageUrl)} />

@@ -77,6 +77,60 @@ html {
     color: var(--color-gray-light);
 }
 
+.icon__arrow__footer {
+    display: block;
+
+    margin: 0px auto 150px;
+
+    width: 100px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--color-gray-dark);
+    position: relative;
+    top: 50px;
+
+    transform: rotate(-90deg);
+
+    cursor: pointer;
+
+    transition: all 200ms ease-in-out;
+}
+
+.icon__arrow__footer:after {
+    content: "";
+    display: inline-block;
+    width: 29px;
+    height: 4px;
+    background-color: var(--color-gray-dark);
+    transform: rotate(45deg);
+    position: absolute;
+    right: -4px;
+    bottom: 9px;
+
+    transition: all 200ms ease-in-out;
+}
+
+.icon__arrow__footer::before {
+    content: "";
+    display: inline-block;
+    width: 29px;
+    height: 4px;
+    background-color: var(--color-gray-dark);
+    transform: rotate(-45deg);
+    position: absolute;
+    right: -4px;
+    bottom: -9px;
+
+    transition: all 200ms ease-in-out;
+}
+
+.icon__arrow__footer:hover::after,
+.icon__arrow__footer:hover::before,
+.icon__arrow__footer:hover {
+    background-color: var(--color-gray-light);
+}
+
+
 @media screen and (max-width: 992px) {
     .footer__copyright {
         font-size: 10px;

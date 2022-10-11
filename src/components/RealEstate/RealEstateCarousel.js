@@ -30,8 +30,10 @@ const RealEstateCarousel = ({
 
     return (
         <section className="realEstateCarousel">
-            <i className="fa-solid fa-arrow-left-long" onClick={previousSlide}></i>
-            <i className="fa-solid fa-arrow-right-long" onClick={nextSlide}></i>
+            <div className="icon__arrow left" onClick={previousSlide}></div>
+            <div className="icon__arrow right" onClick={nextSlide}></div>
+            {/* <i className="fa-solid fa-arrow-left-long" onClick={previousSlide}></i>
+            <i className="fa-solid fa-arrow-right-long" onClick={nextSlide}></i> */}
             {images.map((slide, index) => {
                 const photoId = slide._id;
                 const deleteHandler = () => {
