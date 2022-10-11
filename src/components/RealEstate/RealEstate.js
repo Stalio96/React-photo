@@ -4,6 +4,8 @@ import 'aos/dist/aos.css';
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 
+import logo from '../../assets/White_and_Black_Minimal_Real_Estate_Logo-removebg.png'; 
+
 import * as photoService from '../../services/photoService';
 
 import { useAuthContext } from "../../contexts/AuthContext";
@@ -36,6 +38,7 @@ const RealEstate = () => {
     return (
         <section className='realEstate'>
             <RealEstateCarousel images={carousel} user={user} />
+            {/* <img src={logo} alt='image' className='logo' /> */}
             <div className="realEstate__list">
                 {realEstate.map((x, i) => <RealEstateImage aos={'fade-up'} aos_offset={'100'} key={x._id} photo={x} user={user} index={i} realEstate={realEstate} />)}
             </div>

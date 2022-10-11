@@ -1,5 +1,12 @@
 /* Main section */
 
+.logo {
+    margin-top: 650px;
+
+    margin-bottom: -700px;
+    width: 500px;
+}
+
 .realEstate {
     margin-bottom: 100px;
 }

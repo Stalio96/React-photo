@@ -3,6 +3,8 @@ import axios from 'axios'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+const baseUrl = 'https://guarded-inlet-03061.herokuapp.com';
+
 const Create = () => {
     const navigate = useNavigate();
     const [file, setFile] = useState();
@@ -20,15 +22,15 @@ const Create = () => {
             formData.append('image', file);
             formData.append('caption', caption);
 
-            await axios.post("http://localhost:3030/api/catalog/createRealEstate", formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+            await axios.post(`${baseUrl}/api/catalog/createRealEstate`, formData, { headers: { 'Content-Type': 'multipart/form-data' } });
 
             navigate('/');
-        }else if (caption == 'Real Estate-carousel') {
+        } else if (caption == 'Real Estate-carousel') {
             const formData = new FormData();
             formData.append('image', file);
             formData.append('caption', caption);
 
-            await axios.post("http://localhost:3030/api/catalog/createRealEstateCarousel", formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+            await axios.post(`${baseUrl}/api/catalog/createRealEstateCarousel`, formData, { headers: { 'Content-Type': 'multipart/form-data' } });
 
             navigate('/');
         } else if (caption == 'Portrait') {
@@ -36,15 +38,15 @@ const Create = () => {
             formData.append('image', file);
             formData.append('caption', caption);
 
-            await axios.post("http://localhost:3030/api/catalog/createPortrait", formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+            await axios.post(`${baseUrl}/api/catalog/createPortrait`, formData, { headers: { 'Content-Type': 'multipart/form-data' } });
 
             navigate('/portrait');
-        }else if (caption == 'Portrait-carousel') {
+        } else if (caption == 'Portrait-carousel') {
             const formData = new FormData();
             formData.append('image', file);
             formData.append('caption', caption);
 
-            await axios.post("http://localhost:3030/api/catalog/createPortraitCarousel", formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+            await axios.post(`${baseUrl}/api/catalog/createPortraitCarousel`, formData, { headers: { 'Content-Type': 'multipart/form-data' } });
 
             navigate('/portrait');
         } else if (caption == 'Product') {
@@ -52,15 +54,15 @@ const Create = () => {
             formData.append('image', file);
             formData.append('caption', caption);
 
-            await axios.post("http://localhost:3030/api/catalog/createProduct", formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+            await axios.post(`${baseUrl}/api/catalog/createProduct`, formData, { headers: { 'Content-Type': 'multipart/form-data' } });
 
             navigate('/product');
-        }else if (caption == 'Product-carousel') {
+        } else if (caption == 'Product-carousel') {
             const formData = new FormData();
             formData.append('image', file);
             formData.append('caption', caption);
 
-            await axios.post("http://localhost:3030/api/catalog/createProductCarousel", formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+            await axios.post(`${baseUrl}/api/catalog/createProductCarousel`, formData, { headers: { 'Content-Type': 'multipart/form-data' } });
 
             navigate('/product');
         }
