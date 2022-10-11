@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 
-import logo from '../../assets/White_and_Black_Minimal_Real_Estate_Logo-removebg.png'; 
+// import logo from '../../assets/White_and_Black_Minimal_Real_Estate_Logo-removebg.png'; 
 
 import * as photoService from '../../services/photoService';
 
