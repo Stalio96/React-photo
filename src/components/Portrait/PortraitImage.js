@@ -45,8 +45,8 @@ const PortraitImage = ({
                 <i className="fa-solid fa-arrow-right" onClick={() => getDirection('right')}></i>
                 <i className="fa-solid fa-arrow-left" onClick={() => getDirection('left')}></i>
             </div>
-            <div data-aos={aos} data-aos-offset={aos_offset} className="portraitEl" onClick={() => getImg(photo.imageUrl)}>
-                <img className="img" src={photo.imageUrl} style={{ width: '100%' }} />
+            <div data-aos={aos} data-aos-offset={aos_offset} className="portraitEl" >
+                <img className="img" src={photo.imageUrl} style={{ width: '100%' }} onClick={() => getImg(photo.imageUrl)} />
                 {
                     user.username
                         ? <i onClick={deleteHandler} className="fa-regular fa-trash-can"></i>
