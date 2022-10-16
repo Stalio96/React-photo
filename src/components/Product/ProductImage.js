@@ -10,9 +10,9 @@ const ProductImage = ({
     aos_offset,
     user
 }) => {
+    let [way, setWay] = useState(index);
     const [model, setModel] = useState(false);
     const [tempImg, setTempImg] = useState('');
-    const [way, setWay] = useState(index);
     const length = product.length;
 
     const deleteHandler = (e) => {
@@ -24,10 +24,10 @@ const ProductImage = ({
 
     const getDirection = (direction) => {
         if (direction == 'right') {
-            setWay(way == length - 1 ? 0 : way + 1);
+            setWay(way == length - 1 ? way = 0 : way += 1);
             setTempImg(product[way].imageUrl);
         } else if (direction == 'left') {
-            setWay(way === 0 ? length - 1 : way - 1);
+            setWay(way === 0 ? way = length - 1 : way -= 1);
             setTempImg(product[way].imageUrl);
         }
     }

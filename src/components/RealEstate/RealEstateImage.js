@@ -10,9 +10,9 @@ const RealEstateImage = ({
     aos_offset,
     user
 }) => {
+    let [way, setWay] = useState(index);
     const [model, setModel] = useState(false);
     const [tempImg, setTempImg] = useState('');
-    const [way, setWay] = useState(index);
     const length = realEstate.length;
 
     const deleteHandler = (e) => {
@@ -26,13 +26,17 @@ const RealEstateImage = ({
 
     const getDirection = (direction) => {
         if(direction == 'right'){
-            setWay(way == length - 1? 0 : way + 1);
+            setWay(way == length - 1? way = 0 : way += 1);
             setTempImg(realEstate[way].imageUrl);
+            console.log('right')
         }else if(direction == 'left'){
-            setWay(way === 0 ? length - 1 : way - 1);
+            setWay(way === 0 ? way = length - 1 : way -= 1);
             setTempImg(realEstate[way].imageUrl);
+            console.log('left')
         }
     }
+
+    console.log(way);
 
     const getImg = (imageUrl) => {
         setTempImg(imageUrl);
