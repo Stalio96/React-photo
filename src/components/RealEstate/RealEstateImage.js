@@ -28,11 +28,9 @@ const RealEstateImage = ({
         if(direction == 'right'){
             setWay(way == length - 1? way = 0 : way += 1);
             setTempImg(realEstate[way].imageUrl);
-            console.log('right')
         }else if(direction == 'left'){
             setWay(way === 0 ? way = length - 1 : way -= 1);
             setTempImg(realEstate[way].imageUrl);
-            console.log('left')
         }
     }
 
