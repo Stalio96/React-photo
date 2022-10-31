@@ -8,7 +8,7 @@ const RealEstateImage = ({
     photo,
     aos,
     aos_offset,
-    user
+    user,
 }) => {
     let [way, setWay] = useState(index);
     const [model, setModel] = useState(false);
@@ -16,7 +16,7 @@ const RealEstateImage = ({
     const length = realEstate.length;
 
     const deleteHandler = (e) => {
-        // e.preventDefault();    
+        // e.preventDefault();
 
         photoService.deleteRealEstate(photo._id)
             .then(() => {
@@ -33,8 +33,6 @@ const RealEstateImage = ({
             setTempImg(realEstate[way].imageUrl);
         }
     }
-
-    console.log(way);
 
     const getImg = (imageUrl) => {
         setTempImg(imageUrl);
