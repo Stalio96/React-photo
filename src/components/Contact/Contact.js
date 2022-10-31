@@ -16,7 +16,9 @@ const Contact = () => {
                     <div className="contact__circle mail">
                         <i className="fa-solid fa-envelope"></i>
                     </div>
-                    <p>032photoandvideo@gmail.com</p>
+                    <p>
+                        <a className="mail" href="mailto:032photoandvideo@gmail.com" target="_self">032photoandvideo@gmail.com</a>
+                    </p>
                 </li>
                 <li className="contact__item">
                     <div className="contact__circle">

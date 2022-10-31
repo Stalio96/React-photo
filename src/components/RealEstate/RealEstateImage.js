@@ -17,7 +17,7 @@ const RealEstateImage = ({
 
     const deleteHandler = (e) => {
         // e.preventDefault();
-
+        
         photoService.deleteRealEstate(photo._id)
             .then(() => {
                 console.log('deleted');

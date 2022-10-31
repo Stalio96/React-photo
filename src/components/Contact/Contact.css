@@ -113,6 +113,11 @@
     color: var(--color-gray-dark);
 }
 
+.mail {
+    text-decoration: none;
+    color: var(--color-gray-dark);
+}
+
 @media screen and (max-width: 992px) {
     .contact {
         height: 950px;
