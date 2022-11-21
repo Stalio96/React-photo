@@ -10,7 +10,7 @@ const Contact = () => {
                     <div className="contact__circle">
                         <i className="fa-solid fa-mobile-screen-button"></i>
                     </div>
-                    <p>+1 720 517 5090</p>
+                    <p>+1 707 247 8452</p>
                 </li>
                 <li className="contact__item">
                     <div className="contact__circle mail">
@@ -27,6 +27,17 @@ const Contact = () => {
                     <p>Los Angeles, California</p>
                 </li>
             </ul>
+
+            <form className="email" action="https://formsubmit.co/032photoandvideo@gmail.com" method="POST">
+                <h1 className="email__heading">SEND EMAIL</h1>
+                <label>NAME</label>
+                <input className="email__name" type="text" name="Name"  required/>
+                <label>EMAIL</label>
+                <input className="email__email" type="email" name="Email"  required/>
+                <label>MESSAGE</label>
+                <textarea className="email__text" name="Message" ></textarea>
+                <input className="email__btn" type="submit" value="SEND MESSAGE"/>
+            </form>
         </div>
     );
 }
