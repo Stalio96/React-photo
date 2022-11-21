@@ -194,6 +194,19 @@ label {
     }
 }
 
+@media screen and (max-width: 860px) {
+    .email__name,
+    .email__email {
+        width: 500px;
+        height: 40px;
+    }
+
+    .email__text {
+        max-width: 500px;
+        height: 100px;
+    }
+}
+
 @media screen and (max-width: 480px) {
 
     .email__name,
