@@ -5,7 +5,7 @@
 
     display: block;
 
-    height: 445px;
+    max-height: 1200px;
     width: 70vw;
 
     padding: 30px;
@@ -118,9 +118,75 @@
     color: var(--color-gray-dark);
 }
 
+.email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.email__heading {
+    color: var(--color-gray-dark);
+    letter-spacing: .25rem;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: .019em;
+}
+
+.email__name,
+.email__email,
+.email__text {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.email__name,
+.email__email {
+    width: 600px;
+    height: 40px;
+
+    padding: 5px 20px;
+}
+
+.email__text {
+    width: 600px;
+    max-width: 900px;
+    height: 100px;
+
+    padding: 20px 20px;
+}
+
+.email__btn {
+    padding: 15px 45px;
+
+    text-decoration: none;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 3px;
+
+    background-color: var(--color-gray-dark);
+    color: white;
+
+    cursor: pointer;
+
+    border: none;
+
+    transition: all 200ms ease-in-out;
+}
+
+.email__btn:hover {
+    background-color: #424242;
+}
+
 @media screen and (max-width: 992px) {
     .contact {
-        height: 950px;
+        max-height: 2000px;
     }
 
     .contact__items {
@@ -129,7 +195,23 @@
 }
 
 @media screen and (max-width: 480px) {
+
+    .email__name,
+    .email__email {
+        width: 300px;
+        height: 30px;
+    }
+
+    .email__text {
+        max-width: 300px;
+        height: 100px;
+    }
+
     .contact__heading {
         font-size: 40px;
+    }
+
+    .contact__item > p {
+        font-size: 18px;
     }
 }
