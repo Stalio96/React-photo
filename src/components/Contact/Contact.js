@@ -17,7 +17,7 @@ const Contact = () => {
                         <i className="fa-solid fa-envelope"></i>
                     </div>
                     <p>
-                        <a className="mail" href="mailto:zerothreetwo@sent.com" target="_self">032photoandvideo@gmail.com</a>
+                        <a className="mail" href="mailto:032photoandvideo@gmail.com" target="_self">032photoandvideo@gmail.com</a>
                     </p>
                 </li>
                 <li className="contact__item">
@@ -28,7 +28,7 @@ const Contact = () => {
                 </li>
             </ul>
 
-            <form className="email" action="https://formsubmit.co/zerothreetwo@sent.com" method="POST">
+            <form className="email" action="https://formsubmit.co/032photoandvideo@gmail.com" method="POST">
                 <h1 className="email__heading">SEND EMAIL</h1>
                 <label>NAME</label>
                 <input className="email__name" type="text" name="Name"  required/>
