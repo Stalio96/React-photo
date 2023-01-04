@@ -2,7 +2,7 @@ const About = () => {
     return (
         <main className='about'>
             <section className="about__section">
-                <img className="about__img" src="https://scontent.fsof11-1.fna.fbcdn.net/v/t1.18169-9/14117825_1253574694667019_2950681071552338521_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ve9RnBhHh6UAX_PSq-q&_nc_ht=scontent.fsof11-1.fna&oh=00_AT_6Pn4AUPvNxtEQiWgqFeXhjZqA3_cm7yYeGo6OHbInRA&oe=6354829C" />
+                {/* <img className="about__img" src="https://scontent.fsof11-1.fna.fbcdn.net/v/t1.18169-9/14117825_1253574694667019_2950681071552338521_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ve9RnBhHh6UAX_PSq-q&_nc_ht=scontent.fsof11-1.fna&oh=00_AT_6Pn4AUPvNxtEQiWgqFeXhjZqA3_cm7yYeGo6OHbInRA&oe=6354829C" /> */}
                 <div className="about__container">
                     <h1 className='about__heading'>ABOUT ILIYANA IVANOV</h1>
 
