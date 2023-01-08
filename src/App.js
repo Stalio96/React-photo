@@ -10,7 +10,7 @@ import Create from './components/Create/Create';
 import Header from './components/Header/Header';
 import Product from './components/Product/Product';
 import Socials from './components/Socials/Socials';
-import RealEstate from './components/RealEstate/RealEstate';
+// import RealEstate from './components/RealEstate/RealEstate';
 import Portrait from './components/Portrait/Portrait';
 import Price from './components/Price/Price';
 import NotFound from './components/NotFound/NotFound';
@@ -28,7 +28,7 @@ function App() {
 
         <main>
           <Routes>
-            <Route path='/' element={<RealEstate />} />
+            {/* <Route path='/' element={<RealEstate />} /> */}
             <Route path='/portrait' element={<Portrait />} />
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<Contact />} />

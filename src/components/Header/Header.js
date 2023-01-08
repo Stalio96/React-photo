@@ -35,9 +35,9 @@ const Header = () => {
             }
 
             <nav className="header__items">
-                <li className="header__item">
+                {/* <li className="header__item">
                     <Link className="header__item__link" to='/'>REAL ESTATE</Link>
-                </li>
+                </li> */}
                 <li className="header__item">
                     <Link className="header__item__link" to='/portrait'>PORTRAIT</Link>
                 </li>

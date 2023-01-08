@@ -12,9 +12,9 @@ const Footer = () => {
 
             <div className="footer__nav">
                 <nav className="footer__items">
-                    <li className="footer__item">
+                    {/* <li className="footer__item">
                         <Link className="item__link" to='/'>REAL ESTATE</Link>
-                    </li>
+                    </li> */}
                     <li className="footer__item">
                         <Link className="item__link" to='/portrait'>PORTRAIT</Link>
                     </li>
