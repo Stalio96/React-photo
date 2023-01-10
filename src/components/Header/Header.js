@@ -45,6 +45,9 @@ const Header = () => {
                     <Link className="header__item__link" to='/product'>PRODUCT</Link>
                 </li>
                 <li className="header__item">
+                    <Link className="header__item__link" to='/family'>FAMILY</Link>
+                </li>
+                <li className="header__item">
                     <Link className="header__item__link" to='/price'>PRICE</Link>
                 </li>
                 <li className="header__item">

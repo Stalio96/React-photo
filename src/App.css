@@ -8,6 +8,7 @@
 @import url('../src/components/Socials/Socials.css');
 @import url('../src/components/NotFound/NotFound.css');
 @import url('../src/components/Price/Price.css');
+@import url('../src/components/Family/Family.css');
 
 :root {
   --color-primary: #ffffff;

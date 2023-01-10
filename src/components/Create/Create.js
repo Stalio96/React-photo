@@ -1,9 +1,10 @@
-import axios from 'axios'
+import axios from 'axios';
 
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const baseUrl = 'https://guarded-inlet-03061.herokuapp.com';
+// const baseUrl = 'http://localhost:3030';
 
 const Create = () => {
     const navigate = useNavigate();
@@ -65,6 +66,14 @@ const Create = () => {
             await axios.post(`${baseUrl}/api/catalog/createProductCarousel`, formData, { headers: { 'Content-Type': 'multipart/form-data' } });
 
             navigate('/product');
+        } else if (caption == 'Family') {
+            const formData = new FormData();
+            formData.append('image', file);
+            formData.append('caption', caption);
+
+            await axios.post(`${baseUrl}/api/catalog/createFamily`, formData, { headers: { 'Content-Type': 'multipart/form-data' } });
+
+            navigate('/family');
         }
     }
 
@@ -78,6 +87,7 @@ const Create = () => {
                 <option value="Portrait-carousel">Portrait-carousel</option>
                 <option value="Product">Product</option>
                 <option value="Product-carousel">Product-carousel</option>
+                <option value="Family">Family</option>
             </select>
 
             <input type="submit" />

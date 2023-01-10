@@ -50,6 +50,23 @@ export async function deleteRealEstateCarousel(photoId) {
     });
 }
 
+export async function getFamily() {
+    const response = await fetch(`${baseUrl}/api/catalog/family`);
+
+    const result =  await response.json();
+
+    return result;
+}
+
+export async function deleteFamily(photoId) {
+    const response = await fetch(`${baseUrl}/api/catalog/deleteFamily/${photoId}`, {
+        method: 'DELETE',
+        headers: {
+            'X-Authorization': getToken()
+        }
+    });
+}
+
 export async function getPortrait() {
     const response = await fetch(`${baseUrl}/api/catalog/portrait`);
 
