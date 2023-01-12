@@ -1,19 +1,19 @@
 const baseUrl = 'https://guarded-inlet-03061.herokuapp.com';
 // const baseUrl = 'http://localhost:3030';
 
-export async function createRealEstate(image, caption) {
-    const response = await fetch(`${baseUrl}/api/catalog/createRealEstate`, {
-        method: 'POST',
-        headers: {
-            // 'Content-Type': 'multipart/form-data'
-        },
-        body: JSON.stringify({image, caption})
-    });
+// export async function createRealEstate(image, caption) {
+//     const response = await fetch(`${baseUrl}/api/catalog/createRealEstate`, {
+//         method: 'POST',
+//         headers: {
+//             // 'Content-Type': 'multipart/form-data'
+//         },
+//         body: JSON.stringify({image, caption})
+//     });
 
-    const result = await response.json();
+//     const result = await response.json();
 
-    return result;
-}
+//     return result;
+// }
 
 
 export async function getRealEstates() {
