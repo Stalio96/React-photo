@@ -24,9 +24,9 @@ const Footer = () => {
                     {/* <li className="footer__item">
                         <Link className="item__link" to='/family'>FAMILY</Link>
                     </li> */}
-                    <li className="footer__item">
+                    {/* <li className="footer__item">
                         <Link className="item__link" to='/price'>PRICE</Link>
-                    </li>
+                    </li> */}
                     <li className="footer__item">
                         <Link className="item__link" to='/about'>ABOUT</Link>
                     </li>

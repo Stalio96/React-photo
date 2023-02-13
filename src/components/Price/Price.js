@@ -3,7 +3,9 @@ const Price = () => {
         <section className="price">
             <h1 className="price__heading">PRICES</h1>
 
-            <div className="price__container">
+            <p>Contact me for any inquiries</p>
+
+            {/* <div className="price__container">
                 <p className="price__text">25 photos:</p>
                 <p className="price__prices">$175</p>
             </div>
@@ -22,7 +24,7 @@ const Price = () => {
             <div className="price__container">
                 <p className="price__text">Twilight photos:</p>
                 <p className="price__prices">$100</p>
-            </div>
+            </div> */}
         </section>
     );
 }

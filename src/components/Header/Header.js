@@ -47,9 +47,9 @@ const Header = () => {
                 {/* <li className="header__item">
                     <Link className="header__item__link" to='/family'>FAMILY</Link>
                 </li> */}
-                <li className="header__item">
+                {/* <li className="header__item">
                     <Link className="header__item__link" to='/price'>PRICE</Link>
-                </li>
+                </li> */}
                 <li className="header__item">
                     <Link className="header__item__link" to='/about'>ABOUT</Link>
                 </li>
