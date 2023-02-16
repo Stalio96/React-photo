@@ -17,9 +17,9 @@ const DropDown = ({
             <li className="header__item">
                 <Link className="header__item__link" onClick={() => setIsDrop(false)} to='/product'>PRODUCT</Link>
             </li>
-            <li className="header__item">
+            {/* <li className="header__item">
                 <Link className="header__item__link" onClick={() => setIsDrop(false)} to='/price'>PRICE</Link>
-            </li>
+            </li> */}
             <li className="header__item">
                 <Link className="header__item__link" onClick={() => setIsDrop(false)} to='/about'>ABOUT</Link>
             </li>
